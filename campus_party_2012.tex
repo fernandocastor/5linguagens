@@ -1,0 +1,337 @@
+% Author: Fernando Castor. You can contact the author at castor in the cin.ufpe.br domain. 
+
+%THIS WORK IS LICENSED UNDER A CREATIVE COMMONS ATTRIBUTION-NONCOMMERCIAL-SHAREALIKE 3.0 UNPORTED LICENSE. THE WORK (AS DEFINED BY THE LICENSE) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+%
+%BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+%PLEASE REFER TO THE DESCRIPTION OF THE LICENSE (http://creativecommons.org/licenses/by-nc-sa/3.0/) AND TO ITS FULL TEXT (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode) FOR MORE INFORMATION.
+
+% THIS WORK USES A NUMBER OF IMAGES FROM THIRD-PARTIES. THE COPYRIGHT OF THESE IMAGES REMAIN WITH THEIR OWNERS. 
+
+% This license applies solely to the campus_party_2012.tex file. 
+
+% Build this file with pdflatex 01_Intro.tex
+\documentclass[xcolor=dvipsnames]{beamer}
+\usecolortheme[named=Brown]{structure} 
+%\usetheme{Rochester}
+\usetheme{Frankfurt}
+%\usetheme{Madrid}
+
+\usepackage{booktabs}
+\usepackage{graphics}
+\usepackage{multirow}
+\usepackage[latin1]{inputenc}   % para os acentos
+\usepackage[brazil]{babel}      % para hifeniza\c{c}\~{a}o
+\usepackage{color}
+
+%\usepackage[english]{babel}
+%\usepackage[utf8]{inputenc}
+
+\definecolor{lightgrey}{rgb}{0.8, 0.8, 0.8}
+\newcommand{\shd}[1]{\colorbox{lightgrey}{#1}}
+
+\newcommand{\tblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\tred}[1]{\textcolor{red}{#1}}
+\newcommand{\tgreen}[1]{\textcolor{green}{#1}}
+\newcommand{\tyellow}[1]{\textcolor{yellow}{#1}}
+
+\newcommand{\byellow}[1]{\colorbox{yellow}{#1}}
+\newcommand{\bred}[1]{\colorbox{red}{\textcolor{white}{#1}}}
+\newcommand{\bgreen}[1]{\colorbox{green}{#1}}
+
+\definecolor{lightestgrey}{rgb}{0.91, 0.91, 0.91}
+\newcommand{\lshd}[1]{\colorbox{lightestgrey}{#1}}
+
+\title{As próximas cinco linguagens para você aprender... e por quê?}
+\author{Fernando Castor}
+\pgfdeclareimage[height=0.4cm]{cc}{license}
+
+\institute{Centro de Informática -- Universidade Federal de Pernambuco \\[2.0cm] {\tiny Alguns direitos reservados }\pgfuseimage{cc} }
+\date{}
+\pgfdeclareimage[height=0.8cm]{logo}{ines}
+\pgfdeclareimage[height=0.8cm]{logo2}{spg}
+\pgfdeclareimage[height=0.7cm]{logo3}{cin}
+\pgfdeclareimage[height=1.0cm]{logo4}{ufpe}
+
+\logo{\pgfuseimage{logo4}\hspace{0.1cm}\pgfuseimage{logo3}\hspace{0.1cm}\pgfuseimage{logo}\hspace{0.1cm}\pgfuseimage{logo2} }
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+\begin{frame}
+	%\frametitle{O que é isso?}
+	\begin{columns}
+\begin{column}[l]{7.3cm}
+{\scriptsize
+\texttt{
+\noindent
+\begin{block}{}
+c7 3c 2a 3c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c\\
+28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c\\
+2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b\\
+2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c\\
+3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28\\
+5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a\\
+2b 2a 00 00 01 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 64 48 65 6c 6c 6f 2c 20 57\\
+6f 72 6c 64 21 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+\end{block}
+}}
+% Hex dump de um Hello World escrito em Byte Size. 
+% Obtido a partir de http://www.roesler-ac.de/wolfram/hello.htm
+% ``The Hello World Collection'', compilada por Wolfram Rosler. 
+\end{column}
+
+\begin{column}[c]{3cm}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+	%\frametitle{O que é isso?}
+	\begin{columns}
+\begin{column}[l]{7.3cm}
+{\scriptsize
+\texttt{
+\noindent
+\begin{block}{}
+c7 3c 2a 3c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c\\
+28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c\\
+2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b\\
+2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c\\
+3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28\\
+5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a\\
+2b 2a 00 00 01 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 64 \tred{48 65 6c 6c 6f 2c 20 57}\\
+\tred{6f 72 6c 64 21} 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+\end{block}
+}}
+
+\end{column}
+
+\begin{column}[c]{3cm}
+{\scriptsize
+\texttt{
+\noindent
+\begin{block}{}
+\tred{48} -- H\\
+\tred{65} -- e\\
+\tred{6c} -- l\\
+\tred{6c} -- l\\
+\tred{6f} -- o\\
+\tred{2c} -- ,\\
+\tred{20} -- <SPACE>\\
+\tred{57} -- W\\
+\tred{6F} -- o\\
+\tred{72} -- r\\
+\tred{6c} -- l\\
+\tred{64} -- d\\
+\tred{21} -- !
+\end{block}
+}}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+	%\frametitle{O que é isso?}
+	\begin{columns}
+\begin{column}[l]{7.3cm}
+{\scriptsize
+\texttt{
+\noindent
+\begin{block}{}
+c7 3c 2a 3c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c\\
+28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c\\
+2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b\\
+2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c\\
+3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28\\
+5c 2a 2b 2a 5c 3c 28 5c 2a 2b 2a 5c 3c 28 5c 2a\\
+2b 2a 00 00 01 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 64 \tred{48 65 6c 6c 6f 2c 20 57}\\
+\tred{6f 72 6c 64 21} 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\\
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+\end{block}
+}}
+
+\end{column}
+
+\begin{column}[c]{3cm}
+{\scriptsize
+\texttt{
+\noindent
+\begin{block}{}
+\tred{01001000} -- H\\
+\tred{01100101} -- e\\
+\tred{01101100} -- l\\
+\tred{01101100} -- l\\
+\tred{01101111} -- o\\
+\tred{00101100} -- ,\\
+\tred{00100000} -- <SPACE>\\
+\tred{01010111} -- W\\
+\tred{01101111} -- o\\
+\tred{01110010} -- r\\
+\tred{01101100} -- l\\
+\tred{01100100} -- d\\
+\tred{00100001} -- !
+\end{block}
+}}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}
+%	\frametitle{Programação no ENIAC}
+	\begin{figure}
+	\includegraphics[scale=0.65]{eniac.jpg}\\
+	%Fonte: http://24.media.tumblr.com/tumblr_ljbw9nkezX1qcw9y0o1_500.jpg
+	
+	% Se programar usando os opcodes das instruções da máquina e códigos de caracteres em ASCII, 
+	% tudo isso escrito usando base 2, parece maluquice, imagine programar como se fazia na época
+	% do ENIAC e do EDSAC. É tudo uma questão de perspectiva. Para quem viveu esta época, Assembly 
+	% (com mnemônicos) provavelmente era uma bênção. 
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Linguagens de Programação}
+    
+    \begin{itemize}
+    \item Servem para \textbf{\bgreen{dizer ao computador o que fazer}}
+    \item \textbf{\bgreen{Legíveis}} para humanos
+    \end{itemize}
+\pause
+\vspace{0.4cm}
+\texttt{
+\begin{block}{Hello World traduzido}
+{\footnotesize
+C~~~~~Hello World in Fortran 77\\[0.3cm]
+~~~~~~PROGRAM HELLO\\
+~~~~~~PRINT*, 'Hello World!'\\
+~~~~~~END      }
+\end{block}
+}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Linguagens de Programação são \tgreen{\textbf{Ferramentas}}}
+	\begin{block}{Cada uma se presta a um fim}
+	% Isso é verdade inclusive para as linguagens ditas ``de propósito geral'', ou seja, 
+	% que não estão restritas a um domínio específico. Embora não estejam restritas a
+	% um domínio, tais linguagens geralmente são mais apropriadas para a construção de
+	% determinados tipos de aplicação, com certas características.
+	\begin{columns}
+	\begin{column}[l]{6.5cm}
+	\begin{itemize}
+	\item \textbf{Fortran}: processamento numérico
+	\item \textbf{Cobol}: descrição de dados e aplicações comerciais
+	\item \textbf{Perl}: processamento de cadeiras de caracteres
+	\end{itemize}\vspace{0.2cm}	
+	\end{column}	
+	\begin{column}[r]{4cm}
+	\begin{figure}
+    \includegraphics[scale=0.22]{tools.jpg}\\
+    % Fonte: http://2.bp.blogspot.com/_axtoXDwp4Zk/TTBbP6aSfzI/AAAAAAAAC8k/pEVG62lPG30/s1600/tools.JPG
+    \end{figure}
+    \end{column}
+	\end{columns}
+    \end{block}
+    
+    \pause
+    
+    \begin{block}{Esse fim \tred{pode mudar} com o tempo}
+Exemplo: \textbf{Java}
+	\begin{enumerate}
+	\item Originalmente: projetada para televisão interativa
+	\item No lançamento/primeiros anos: a linguagem da Web
+	\item Hoje: servidores e aplicações distribuídas
+	\end{enumerate}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+	\begin{figure}
+	\includegraphics[scale=0.45]{pls.jpg}\\
+	%http://www.collegeteacher.org/csci101/resource_programming/pics/progLanguages.jpg
+	\end{figure}
+    \pause
+{\small    \byellow{Em 24 de julho de 2012, havia 653 LPs na lista da Wikipédia.}}
+% Não inclui diversas linguagens ``acadêmicas'', por exemplo, Ptolemy (http://ptolemy.cs.iastate.edu/)
+% e Spec# (http://research.microsoft.com/en-us/projects/specsharp/), esta última projetada e 
+% implementada por pesquisadores da Microsoft Research,
+% nem algumas linguagens ``esotéricas'', como Malbolge (http://www.lscheffer.com/malbolge.shtml), 
+% Whitespace (http://en.wikipedia.org/wiki/Whitespace_(programming_language)) e Shakespeare 
+% (http://en.wikipedia.org/wiki/Shakespeare_(programming_language). 
+% A lista encontra-se em http://en.wikipedia.org/wiki/List_of_programming_languages
+\end{frame}
+
+\begin{frame}
+\frametitle{Certo, são muitas linguagens, mas...}
+{\Large
+\begin{enumerate}
+\item Quais são as linguagens de programação mais usadas na prática?\vspace{1cm}
+\item Se você quisesse aprender cinco linguagens para o futuro, quais deveriam ser?
+\end{enumerate}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Certo, são muitas linguagens, mas...}
+{\Large
+\begin{enumerate}
+\item Quais são as linguagens de programação mais usadas na prática?\vspace{1cm}
+\item Se você quisesse aprender cinco linguagens para o futuro, quais deveriam ser?
+\end{enumerate}
+}
+\end{frame}
+
+\begin{frame}
+\vspace{0.2cm}
+\begin{center}
+\Huge{\textit{Quais são as linguagens de programação mais usadas na prática?}}
+\end{center}
+\end{frame}
+
+
+
+% Para a primeira pergunta: resposta difusa, oriunda de várias fontes.
+
+% Para a segunda: opinião pessoal e com contextos específicos. Não estou dizendo que é o melhor conjunto de linguagens e provavelmente cada programador da audiência não apenas proporia uma lista diferente, mas proporia uma lista baseada em critérios diferentes. A ideia é fornecer uma visão abrangente sobre tópicos importantes tanto para quem já programa quanto para uma pessoa que queira começar a programar. Adicionalmente, não afirmo que essas são linguagens que todo mundo deve saber, mas são todas linguagens que expandem sua percepção sobre o desenvolvimento de sistemas com determinadas características. Conhecê-las, mesmo que você nunca venha a programar profissionalmente em nenhuma delas, certamente lhe tornará um desenvolvedor melhor. 
+
+%Python
+%Erlang
+%Dart
+%Scala e as linguagens para a JVM (Jython, Groovy, Erjang, JRuby, Clojure, etc.) 
+%C
+
+% falar sobre a palavra ``próximas'' do título. Não quer dizer que sejam apenas linguagens recentes. 
+
+% Exemplos de implementação do programa das 99 Garrafas de Cerveja (http://www.99-bottles-of-beer.net/). 
+
+
+\end{document}
