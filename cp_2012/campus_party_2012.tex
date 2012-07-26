@@ -347,9 +347,13 @@ Exemplo: \textbf{Java}
 \begin{columns}
 \begin{column}[c]{2.7cm}
 \includegraphics[scale=0.35]{codeplex.jpg}
+%Logo do CodePlex
+%http://joel.neubeck.net/wp-content/uploads/2008/06/codeplex-logo_thumb.jpg
 \end{column}
 \begin{column}[c]{2.7cm}
 \includegraphics[scale=0.35]{sourceforge.jpg} 
+%Logo do SourceForge
+%http://www.thehostingnews.com/wp-content/uploads/2011/02/Sourceforge-THN.jpg
 \end{column}
 \end{columns}
 \end{itemize}    
@@ -368,6 +372,8 @@ Exemplo: \textbf{Java}
 \item O que é um ``projeto''? 
 \vspace{0.1cm}
 \item \tred{\textit{Forks}} contam como projetos separados?
+% Pode parecer óbvio que sim mas, quando paramos para examinar o Github (https://github.com/popular/forked)
+% e percebemos que há projetos com mais de 7.000 forks, a resposta torna-se menos evidente. 
 \vspace{0.1cm}
 \item Se usar apenas \tred{código de terceiros} conta?
 % Código de terceiros: por exemplo, se um programa não inclui nenhuma linha de código desenvolvida
@@ -384,14 +390,69 @@ Exemplo: \textbf{Java}
 \end{itemize}    
 \end{frame}
 
-As informações aqui apresentadas refletem a dificuldade de se responder essa pergunta
+\begin{frame}
+\vspace{0.2cm}
+\begin{center}
+\Huge{Em resumo: \\é necessário adotar \\\tred{diferentes perspectivas}. }
+\end{center}
+\end{frame}
+
+\begin{frame}
+\vspace{0.2cm}
+\begin{center}
+\Huge{Em resumo: \\é necessário adotar \\\tred{diferentes perspectivas}. }
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Felizmente...}
+\begin{itemize}
+\item Alguém já fez parte do trabalho\vspace{0.3cm}
+\item TIOBE Programming Community Index\vspace{0.1cm}
+% Atualizado mensalmente no endereço http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+% Se você simplesmente buscar TIOBE no Google, vai direto para essa página. Vale ressaltar que, até onde pude
+% averiguar, o ranking da TIOBE é o medidor mais popular de popularidade de linguagens de programação. 
+% Uma breve descrição da TIOBE (que é uma empresa sediada na Holanda): 
+% Measuring Software Code Quality
+%TIOBE checks more than 211 million lines of software code for its customers world-wide, real-time, each day.
+%We have combined the best-in-class code quality checking tools into one framework. Via a single web interface you can consult all important software defects and metrics information for all your software projects. We provide the facts and figures, you take the decisions.  
+% (extraída de http://www.tiobe.com)
+\begin{quote}
+... is an indicator of the popularity of programming languages. The index is \bgreen{updated once a month}. The ratings are based on the \tblue{number of skilled engineers} world-wide, \tblue{courses} and \tblue{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
+\end{quote}
+% Note que nada do que é dito acima menciona diretamente código escrito nas linguagens ou número de repositórios ou projetos que usam certas linguagens. Ou seja, a avaliação de popularidade é feita muito mais com base em quem conhece a linguagem do que em quem de fato a emprega na construção de programas. 
+\end{itemize}    
+\end{frame}
+
+\begin{frame}
+De acordo com a TIOBE, o ranking em julho/2012 era este:
+\hspace*{2cm}\includegraphics[scale=0.35]{tiobe.jpg}
+% Esse ranking faz sentido. Java, C, C++, Objective-C e PHP são, de fato, muito populares. JavaScript, Python, Perl e Visual Basic também.
+% Claro que não é um ranking perfeito, conforme discutido nos slides abaixo. 
+\end{frame}
+
+\begin{frame}
+De acordo com a TIOBE, o ranking em julho/2012 era este:
+\hspace*{2cm}\includegraphics[scale=0.35]{tiobe2.jpg}
+% Essas linguagens destacadas em vermelho (PL/SQL, Transact-SQL, LISP, Ada e Matlab) são mais usadas do que BASH e C shell? Difícil de acreditar nisso. 
+% Perl é mais usada que Ruby e JavaScript? Difícil de acreditar também. 
+\end{frame}
 
 
-%Logo do SourceForge
-%http://www.thehostingnews.com/wp-content/uploads/2011/02/Sourceforge-THN.jpg
-
-%Logo do CodePlex
-%http://joel.neubeck.net/wp-content/uploads/2008/06/codeplex-logo_thumb.jpg
+\begin{frame}
+\vspace{0.2cm}
+\begin{center}
+\LARGE{Problema do ranking da TIOBE:}\\[0.2cm]
+\Large{não menciona diretamente \tred{\textbf{código}} escrito nas linguagens ou \tred{\textbf{número de repositórios ou}} \tred{\textbf{projetos}} que usam certas linguagens.}
+\\[0.3cm]
+% Para aqueles que não se lembram das informações que o ranking da TIOBE captura...
+\pause
+{\small \begin{quote}
+... is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the bred{number of skilled engineers} world-wide, \bred{courses} and \bred{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
+\end{quote}
+}
+\end{center}
+\end{frame}
 
 
 % String de busca usada no Github: 
