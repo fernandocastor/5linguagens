@@ -463,13 +463,9 @@ De acordo com a TIOBE, o ranking em julho/2012 era este:
 \begin{itemize}
 \item Os maiores incluem dezenas de milhares de projetos\vspace{0.1cm}
 % Grande parte corresponde a software de alta qualidade, com milhares ou milhões de usuários. 
-\item E já fornecem estatísticas\vspace{0.1cm}
+\item E já fornecem algumas estatísticas\vspace{0.1cm}
 \end{itemize}
 \end{itemize}
-\pause
-\begin{block}{}
-\textbf{Importante}: não representam a \tred{indústria} como um todo
-\end{block}
 \vspace{0.2cm}
 Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 % Github e %SourceForge
@@ -585,7 +581,7 @@ Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 \begin{columns}
 \begin{column}[l]{5cm}
 {\scriptsize
-Os oficiais, com base em número de repositórios únicos:
+Com base em número de repositórios únicos:\vspace{0.2cm}
 \begin{enumerate}
 \item JavaScript (20\%)
 \item Ruby (14\%)
@@ -607,10 +603,59 @@ Os oficiais, com base em número de repositórios únicos:
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{Dados do Github}
+\begin{columns}
+\begin{column}[l]{5cm}
+{\scriptsize
+Com base em número de repositórios únicos:\vspace{0.2cm}
+\begin{enumerate}
+\item JavaScript (20\%) -- \tred{7}
+\item Ruby (14\%) -- \tred{não aparece}
+\item Python (9\%) -- \tred{5}
+\item Shell (8\%) -- \tred{9}
+\item Java (8\%) -- \tred{1}
+\item PHP	(7\%) -- \tred{4}
+\item C (7\%) -- \tred{3}
+\item C++ (4\%) -- \tred{2}
+\item Perl (4\%) -- \tred{8}
+\item Objective-C	(3\%) -- \tred{não aparece}
+\end{enumerate}}
+\end{column}
+\begin{column}[l]{4cm}
+{\scriptsize
+{\bf Entre parênteses}: percentagem do total de repositórios
+}
+\\[0.2cm]
+{\scriptsize
+Comparando-se as posições das linguagens no Github e no SourceForge.
+}
+\pause\\[0.2cm]
+{\scriptsize
+Apenas \tred{Shell} não aparece no índice da TIOBE.
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\vspace{0.2cm}
+\begin{center}
+\Huge{Complementarmente: Ohloh.net}
 % Sobre o Ohloh.net:
 % Ohloh is a free, public directory of Free and Open Source Software and the contributors who create and maintain it. Ohloh Code is a publicly available, free code search site that indexes most of the projects in Ohloh.
 % End.: http://www.ohloh.net
+\\[0.4cm]
+\Large{http://www.ohloh.net/languages/compare}
+\\[0.4cm]
+Permite comparação em termos de diferentes critérios
+\end{center}
+\end{frame}
 
+\begin{frame}
+	\frametitle{Resumindo...}
+	\begin{figure}
+	\includegraphics[scale=0.30]{lang_pop.jpg}\\
 %Dados do Ohloh.net sobre atividade de commits obtidos usando a seguinte string de busca:
 % https://www.ohloh.net/languages/compare?measure=commits&percent=true&l0=objective_c&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&l10=shell&l11=sql&l12=-1&commit=Update
 
@@ -621,17 +666,15 @@ Os oficiais, com base em número de repositórios únicos:
 %Dados do Ohloh.net sobre número de pessoas que contribuíram pelo menos uma linha de código em cada linguagem obtidos usando a seguinte string de busca:
 %https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=contributors&percent=true
 % A caption é a mesma da primeira figura.
+	\end{figure}
+	\pause
+	``\textbf{Vencedoras}'': Java, C, C++, JavaScript, Python, PHP. 
+	\pause
+\begin{block}{}
+\textbf{Importante}: não representam a indústria \tred{\textbf{como um todo}.}
+\end{block}
 
-% String de busca usada no Github: 
-%BASH CSH TCSH ZSH KSH ActionScript Ada Apex Arc Arduino ASP Assembly Augeas AutoHotkey Boo Bro C C# C++ Ceylon Clojure CoffeeScript ColdFusion Common Lisp Coq D Dart DCPU-16 ASM Delphi Dylan eC Eiffel Elixir Emacs Lisp Erlang F# Factor Fancy Fantom FORTRAN Go Gosu Groovy Haskell HaXe Io Ioke Java JavaScript Julia Kotlin Logtalk Lua Matlab Max/MSP Mirah Nemerle Nimrod Nu Objective-C Objective-J OCaml ooc Opa OpenEdge ABL Parrot Perl PHP PowerShell Prolog Puppet Pure Data Python R Racket Rebol Ruby Rust Scala Scheme Scilab Self Shell Smalltalk Standard ML SuperCollider Tcl Turing Vala Verilog VHDL VimL Visual Basic XQuery
-% Basicamente, peguei a lista completa de linguagens que aparece em http://github.com/languages e acrescentei BASH, CSH, TCSH, ZSH e KSH
-% Com Repositories in Any Language.
-
-% Comparação: o que se fala (em termos de número de tags no StackOverflow) contra o que se usa (de acordo com o ranking do Github). O Resultado foi uma correlação alta.  
-% http://www.dataists.com/wp-content/uploads/2010/12/rank_scatter1.png
-% rank_scatter1.png
-% Autores: Drew Conway e John Myles White
-
+\end{frame}
 
 
 % Para a segunda: opinião pessoal e com contextos específicos. Não estou dizendo que é o melhor conjunto de linguagens e provavelmente cada programador da audiência não apenas proporia uma lista diferente, mas proporia uma lista baseada em critérios diferentes. A ideia é fornecer uma visão abrangente sobre tópicos importantes tanto para quem já programa quanto para uma pessoa que queira começar a programar. Adicionalmente, não afirmo que essas são linguagens que todo mundo deve saber, mas são todas linguagens que expandem sua percepção sobre o desenvolvimento de sistemas com determinadas características. Conhecê-las, mesmo que você nunca venha a programar profissionalmente em nenhuma delas, certamente lhe tornará um desenvolvedor melhor. 
@@ -639,6 +682,52 @@ Os oficiais, com base em número de repositórios únicos:
 % falar sobre a palavra ``próximas'' do título. Não quer dizer que sejam apenas linguagens recentes. 
 
 % Exemplos de implementação do programa das 99 Garrafas de Cerveja (http://www.99-bottles-of-beer.net/). 
+
+%
+%\begin{frame}
+%\vspace{0.2cm}
+%\begin{center}
+%\Huge{Anexo:}\\[0.3cm]
+%\Huge{Alguns dados extraídos de Ohloh.net}
+%\end{center}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Percentagem dos commits em cada linguagem}
+%\begin{columns}
+%\begin{column}[l]{8.5cm}
+%	\includegraphics[scale=0.25]{ohloh.jpg}\\
+%\end{column}
+%\begin{column}[l]{2cm}
+%	\includegraphics[scale=0.20]{ohloh_caption.jpg}\\
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Percentagem dos projetos, por linguagem}
+%\begin{columns}
+%\begin{column}[l]{8.5cm}
+%	\includegraphics[scale=0.20]{ohloh_perproject.jpg}\\
+%\end{column}
+%\begin{column}[l]{2cm}
+%	\includegraphics[scale=0.20]{ohloh_caption.jpg}\\
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Percentagem dos contribuintes, por linguagem}
+%% Considera apenas contribuintes que escreveram ao menos uma linha de código na linguagem
+%\begin{columns}
+%\begin{column}[l]{8.5cm}
+%	\includegraphics[scale=0.25]{ohloh_percontributor.jpg}\\
+%\end{column}
+%\begin{column}[l]{2cm}
+%	\includegraphics[scale=0.20]{ohloh_caption.jpg}\\
+%\end{column}
+%\end{columns}
+%\end{frame}
 
 
 \end{document}
