@@ -302,7 +302,7 @@ Exemplo: \textbf{Java}
 \begin{frame}
 \vspace{0.2cm}
 \begin{center}
-\Huge{Pergunta 1}\\[0.3cm]
+\Huge{\textbf{Parte 1}}\\[0.3cm]
 \Large{Quais são as linguagens de programação mais usadas na prática?}
 % Quais são? É um bom momento para se perguntar isso, antes de seguir adiante.
 \end{center}
@@ -639,6 +639,44 @@ Apenas \tred{Shell} não aparece no índice da TIOBE.
 \end{frame}
 
 \begin{frame}
+\frametitle{E o que os programadores estão falando?}
+\begin{columns}
+\begin{column}[l]{5cm}
+A partir das tags do {\tt stackoverflow.com}:\vspace{0.2cm}
+{\scriptsize
+\begin{enumerate}
+\item C\# (331964)
+\item Java (275849)
+\item PHP (255372)
+\item JavaScript (239977) % Se incluirmos o JQuery, o número sobre para 445576, colocando JavaScript na primeira posição!
+\item C++ (138684)
+\item Python (121864) % Incluindo o Django, o número sobe para 157798
+\item Objective-C (94303)
+\item SQL (88972) 
+\item C (65463)
+\item Ruby (50757) % Incluindo o Rails, o número sobre para 162223 (ficando acima de C++ e Python)
+\item VB.NET (33043)
+\end{enumerate}}
+\end{column}
+\begin{column}[l]{4cm}
+{\scriptsize
+{\bf Entre parênteses}: número de posts com aquela tag
+}
+\\[0.3cm]
+\pause{\scriptsize
+Se levarmos JQuery, Django e Rails em conta, os números mudam:
+\begin{enumerate}[4]
+\item[1] JavaScript (\tred{445576})
+\item[5] Ruby (\tred{162223})
+\item[6] Python (\tred{157798})
+\end{enumerate}
+} 
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
 \vspace{0.2cm}
 \begin{center}
 \Huge{Complementarmente: Ohloh.net}
@@ -653,27 +691,25 @@ Permite comparação em termos de diferentes critérios
 \end{frame}
 
 \begin{frame}
-	\frametitle{Resumindo...}
+	\frametitle{Top 10 a partir de diversas fontes}
 	\begin{figure}
-	\includegraphics[scale=0.30]{lang_pop.jpg}\\
-%Dados do Ohloh.net sobre atividade de commits obtidos usando a seguinte string de busca:
-% https://www.ohloh.net/languages/compare?measure=commits&percent=true&l0=objective_c&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&l10=shell&l11=sql&l12=-1&commit=Update
-
-%Dados do Ohloh.net sobre número de projetos obtidos usando a seguinte string de busca:
-% https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=projects&percent=true
-% A caption é a mesma da primeira figura.
-
-%Dados do Ohloh.net sobre número de pessoas que contribuíram pelo menos uma linha de código em cada linguagem obtidos usando a seguinte string de busca:
-%https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=contributors&percent=true
-% A caption é a mesma da primeira figura.
+	\includegraphics[scale=0.4]{lang_pop.jpg}\\
+	% Pela figura, dá para ver, por exemplo, que muita gente trabalhar com Objective-C, mas muito desse esforço não visa a construção 
+	% de software de código aberto. 
 	\end{figure}
 	\pause
-	``\textbf{Vencedoras}'': Java, C, C++, JavaScript, Python, PHP. 
-	\pause
 \begin{block}{}
-\textbf{Importante}: não representam a indústria \tred{\textbf{como um todo}.}
+\textbf{Importante}: não representam a indústria \tred{\textbf{como um todo}}.
 \end{block}
+% Essas não foram as únicas fontes que consultei. Olhei também http://spectrum.ieee.org/at-work/tech-careers/the-top-10-programming-languages/ e outros endereços mencionados acima. Os resultados batem surpreendentemente bem.  
+\end{frame}
 
+\begin{frame}
+\vspace{0.2cm}
+\begin{center}
+\Huge{\textbf{Parte 2}}\\[0.3cm]
+\Large{Se você quisesse aprender cinco linguagens para o futuro, quais deveriam ser?}
+\end{center}
 \end{frame}
 
 
@@ -692,6 +728,17 @@ Permite comparação em termos de diferentes critérios
 %\end{center}
 %\end{frame}
 %
+%%Dados do Ohloh.net sobre atividade de commits obtidos usando a seguinte string de busca:
+%% https://www.ohloh.net/languages/compare?measure=commits&percent=true&l0=objective_c&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&l10=shell&l11=sql&l12=-1&commit=Update
+%
+%%Dados do Ohloh.net sobre número de projetos obtidos usando a seguinte string de busca:
+%% https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=projects&percent=true
+%% A caption é a mesma da primeira figura.
+%
+%%Dados do Ohloh.net sobre número de pessoas que contribuíram pelo menos uma linha de código em cada linguagem obtidos usando a seguinte string de busca:
+%%https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=contributors&percent=true
+%% A caption é a mesma da primeira figura.
+
 %\begin{frame}
 %\frametitle{Percentagem dos commits em cada linguagem}
 %\begin{columns}
