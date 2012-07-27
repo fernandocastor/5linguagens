@@ -307,7 +307,8 @@ Exemplo: \textbf{Java}
 % Quais são? É um bom momento para se perguntar isso, antes de seguir adiante.
 \end{center}
 \end{frame}
-
+% Discussão interessante sobre o tema que junta várias das informações apresentadas aqui:
+% http://www.readwriteweb.com/hack/2012/06/5-ways-to-tell-which-programming-lanugages-are-most-popular.php
 
 
 
@@ -342,18 +343,18 @@ Exemplo: \textbf{Java}
 % sexta linguagem com mais projetos. Além disso tudo, é importante levar em conta a maturidade
 % dos projetos. No caso do SourceForge, 1031 projetos que usam C# são considerados
 % maduros ou estáveis. No Codeplex 908 projetos que incluem a tag C# são estáveis.  
+%Logo do CodePlex
+%http://joel.neubeck.net/wp-content/uploads/2008/06/codeplex-logo_thumb.jpg
+%Logo do SourceForge
+%http://www.thehostingnews.com/wp-content/uploads/2011/02/Sourceforge-THN.jpg
 \end{itemize}
 
 \begin{columns}
 \begin{column}[c]{2.7cm}
 \includegraphics[scale=0.35]{codeplex.jpg}
-%Logo do CodePlex
-%http://joel.neubeck.net/wp-content/uploads/2008/06/codeplex-logo_thumb.jpg
 \end{column}
 \begin{column}[c]{2.7cm}
 \includegraphics[scale=0.35]{sourceforge.jpg} 
-%Logo do SourceForge
-%http://www.thehostingnews.com/wp-content/uploads/2011/02/Sourceforge-THN.jpg
 \end{column}
 \end{columns}
 \end{itemize}    
@@ -363,6 +364,9 @@ Exemplo: \textbf{Java}
 \frametitle{O que significam ``ser usada'' e ``na prática''? }
 \begin{itemize}
 \item Mais \tred{linhas de código} escritas na linguagem?
+\pause
+\vspace{0.3cm}
+\item Número de \tred{\textit{commits}} de programas que usam a linguagem?
 \pause
 \vspace{0.3cm}
 \item Mais \tred{``projetos''} com linhas de código escritas na linguagem?
@@ -398,16 +402,9 @@ Exemplo: \textbf{Java}
 \end{frame}
 
 \begin{frame}
-\vspace{0.2cm}
-\begin{center}
-\Huge{Em resumo: \\é necessário adotar \\\tred{diferentes perspectivas}. }
-\end{center}
-\end{frame}
-
-\begin{frame}
 \frametitle{Felizmente...}
 \begin{itemize}
-\item Alguém já fez parte do trabalho\vspace{0.3cm}
+\item Alguém já fez \bred{parte} do trabalho\vspace{0.3cm}
 \item TIOBE Programming Community Index\vspace{0.1cm}
 % Atualizado mensalmente no endereço http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
 % Se você simplesmente buscar TIOBE no Google, vai direto para essa página. Vale ressaltar que, até onde pude
@@ -420,6 +417,7 @@ Exemplo: \textbf{Java}
 \begin{quote}
 ... is an indicator of the popularity of programming languages. The index is \bgreen{updated once a month}. The ratings are based on the \tblue{number of skilled engineers} world-wide, \tblue{courses} and \tblue{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
 \end{quote}
+% Ou seja, o índice da TIOBE já adota diferentes perspectivas, o que é uma coisa boa. Apesar disso, apresenta uma limitação importante. 
 % Note que nada do que é dito acima menciona diretamente código escrito nas linguagens ou número de repositórios ou projetos que usam certas linguagens. Ou seja, a avaliação de popularidade é feita muito mais com base em quem conhece a linguagem do que em quem de fato a emprega na construção de programas. 
 \end{itemize}    
 \end{frame}
@@ -435,32 +433,206 @@ De acordo com a TIOBE, o ranking em julho/2012 era este:
 De acordo com a TIOBE, o ranking em julho/2012 era este:
 \hspace*{2cm}\includegraphics[scale=0.35]{tiobe2.jpg}
 % Essas linguagens destacadas em vermelho (PL/SQL, Transact-SQL, LISP, Ada e Matlab) são mais usadas do que BASH e C shell? Difícil de acreditar nisso. 
-% Perl é mais usada que Ruby e JavaScript? Difícil de acreditar também. 
+% Perl é mais usada que Ruby e JavaScript? É possível, mas estranho, já que Perl é uma linguagem de nicho (embora 
+% seja uma linguagem de nicho muito popular).  
 \end{frame}
 
 
 \begin{frame}
 \vspace{0.2cm}
 \begin{center}
-\LARGE{Problema do ranking da TIOBE:}\\[0.2cm]
-\Large{não menciona diretamente \tred{\textbf{código}} escrito nas linguagens ou \tred{\textbf{número de repositórios ou}} \tred{\textbf{projetos}} que usam certas linguagens.}
-\\[0.3cm]
-% Para aqueles que não se lembram das informações que o ranking da TIOBE captura...
-\pause
+\Large{Relembrando:}\\[0.1cm]
 {\small \begin{quote}
-... is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the bred{number of skilled engineers} world-wide, \bred{courses} and \bred{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
+... is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the \bred{number of skilled engineers} world-wide, \bred{courses} and \bred{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
+% Para aqueles que não se lembram das informações que o ranking da TIOBE captura...
 \end{quote}
 }
 \end{center}
+\pause
+\begin{block}{}
+\begin{center}\Large{Problema do ranking do índice da TIOBE:}\\[0.1cm]
+\large{não menciona diretamente \tred{\textbf{código}} escrito nas linguagens ou \tred{\textbf{número de repositórios ou}} \tred{\textbf{projetos}} que as usam.}
+\end{center}
+\end{block}
 \end{frame}
 
+\begin{frame}
+\frametitle{Obtendo informações sobre código}
+\begin{itemize}
+\item Repositórios de software de código aberto (\textit{forges}) são um bom lugar para procurar\vspace{0.1cm}
+\begin{itemize}
+\item Os maiores incluem dezenas de milhares de projetos\vspace{0.1cm}
+% Grande parte corresponde a software de alta qualidade, com milhares ou milhões de usuários. 
+\item E já fornecem estatísticas\vspace{0.1cm}
+\end{itemize}
+\end{itemize}
+\pause
+\begin{block}{}
+\textbf{Importante}: não representam a \tred{indústria} como um todo
+\end{block}
+\vspace{0.2cm}
+Examinaremos os dados de dois desses repositórios:\\[0.2cm]
+% Github e %SourceForge
+~~~~~~~~~~~~~~~\includegraphics[scale=0.40]{sourceforge_logo.jpg}~e~\includegraphics[scale=0.40]{github_logo.png}
+%Logo do SourceForge
+%http://www.thehostingnews.com/wp-content/uploads/2011/02/Sourceforge-THN.jpg
+%Logo do Github
+%http://www.srombauts.fr/wp-content/uploads/github_logo.png
+\end{frame}
+
+\begin{frame}
+\frametitle{Dados do SourceForge}
+\begin{columns}
+\begin{column}[l]{5cm}
+{\scriptsize
+\begin{enumerate}
+\item Java (10,386)
+\item C++ (9,261)
+\item C (6,446)
+\item PHP (4,817)
+\item Python (3,814)
+\item C\# (3,300)
+\item JavaScript (2,713)
+\item Perl (1,514)
+\item Unix Shell (985)
+\item Visual Basic .NET (811)
+\item Delphi/Kylix (742)
+\item Assembly (480)
+\item Visual Basic (435)
+\item ActionScript (357)
+\item Lua (339)
+\end{enumerate}}
+\end{column}
+\begin{column}[l]{4cm}
+{\scriptsize
+{\bf Entre parênteses}: número de projetos que declaram usar a linguagem}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dados do SourceForge}
+\begin{columns}
+\begin{column}[l]{5cm}
+{\scriptsize
+\begin{enumerate}
+\item Java (10,386)
+\item C++ (9,261)
+\item C (6,446)
+\item PHP (4,817)
+\item Python (3,814)
+\item C\# (3,300)
+\item JavaScript (2,713)
+\item Perl (1,514)
+\item \tred{Unix Shell} (985)
+\item Visual Basic .NET (811)
+\item Delphi/Kylix (742)
+\item \tred{Assembly} (480)
+\item Visual Basic (435)
+\item \tred{ActionScript} (357)
+\item Lua (339)
+\end{enumerate}}
+\end{column}
+\begin{column}[l]{4cm}
+{\scriptsize
+{\bf Entre parênteses}: número de projetos que declaram usar a linguagem}
+\\[0.3cm]
+{\scriptsize
+\tred{Assembly}, \tred{ActionScript} e \tred{UNIX} \tred{Shell} não aparecem no índice da TIOBE}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dados do SourceForge}
+\begin{columns}
+\begin{column}[l]{5cm}
+{\scriptsize
+\begin{enumerate}
+\item Java (10,386)
+\item C++ (9,261)
+\item C (6,446)
+\item PHP (4,817)
+\item Python (3,814)
+\item C\# (3,300)
+\item JavaScript (2,713)
+\item Perl (1,514)
+\item \tred{Unix Shell} (985)
+\item Visual Basic .NET (811)
+\item Delphi/Kylix (742)
+\item \tred{Assembly} (480)
+\item Visual Basic (435)
+\item \tred{ActionScript} (357)
+\item Lua (339)
+\end{enumerate}}
+\end{column}
+\begin{column}[l]{4cm}
+{\scriptsize
+{\bf Entre parênteses}: número de projetos que declaram usar a linguagem}
+\\[0.3cm]
+{\scriptsize
+\tred{Assembly}, \tred{ActionScript} e \tred{UNIX} Shell não aparecem no índice da TIOBE}
+\\[0.3cm]
+{\scriptsize
+\bred{Ruby} e \bred{Objective-C} aparecem no Top 10 da TIOBE mas não aqui}
+% Provavelmente porque estas linguagens tornaram-se muito populares nos últimos anos e o SourceForge vem perdendo espaço para o Github. Já faz alguns anos que o Github tornou-se o principal forge.
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dados do Github}
+\begin{columns}
+\begin{column}[l]{5cm}
+{\scriptsize
+Os oficiais, com base em número de repositórios únicos:
+\begin{enumerate}
+\item JavaScript (20\%)
+\item Ruby (14\%)
+\item Python (9\%)
+\item Shell (8\%)
+\item Java (8\%)
+\item PHP	(7\%)
+\item C (7\%)
+\item C++ (4\%)
+\item Perl (4\%)
+\item Objective-C	(3\%)
+\end{enumerate}}
+\end{column}
+\begin{column}[l]{4cm}
+{\scriptsize
+{\bf Entre parênteses}: percentagem do total de repositórios
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+% Sobre o Ohloh.net:
+% Ohloh is a free, public directory of Free and Open Source Software and the contributors who create and maintain it. Ohloh Code is a publicly available, free code search site that indexes most of the projects in Ohloh.
+% End.: http://www.ohloh.net
+
+%Dados do Ohloh.net sobre atividade de commits obtidos usando a seguinte string de busca:
+% https://www.ohloh.net/languages/compare?measure=commits&percent=true&l0=objective_c&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&l10=shell&l11=sql&l12=-1&commit=Update
+
+%Dados do Ohloh.net sobre número de projetos obtidos usando a seguinte string de busca:
+% https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=projects&percent=true
+% A caption é a mesma da primeira figura.
+
+%Dados do Ohloh.net sobre número de pessoas que contribuíram pelo menos uma linha de código em cada linguagem obtidos usando a seguinte string de busca:
+%https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=contributors&percent=true
+% A caption é a mesma da primeira figura.
 
 % String de busca usada no Github: 
 %BASH CSH TCSH ZSH KSH ActionScript Ada Apex Arc Arduino ASP Assembly Augeas AutoHotkey Boo Bro C C# C++ Ceylon Clojure CoffeeScript ColdFusion Common Lisp Coq D Dart DCPU-16 ASM Delphi Dylan eC Eiffel Elixir Emacs Lisp Erlang F# Factor Fancy Fantom FORTRAN Go Gosu Groovy Haskell HaXe Io Ioke Java JavaScript Julia Kotlin Logtalk Lua Matlab Max/MSP Mirah Nemerle Nimrod Nu Objective-C Objective-J OCaml ooc Opa OpenEdge ABL Parrot Perl PHP PowerShell Prolog Puppet Pure Data Python R Racket Rebol Ruby Rust Scala Scheme Scilab Self Shell Smalltalk Standard ML SuperCollider Tcl Turing Vala Verilog VHDL VimL Visual Basic XQuery
 % Basicamente, peguei a lista completa de linguagens que aparece em http://github.com/languages e acrescentei BASH, CSH, TCSH, ZSH e KSH
 % Com Repositories in Any Language.
 
-% Para a primeira pergunta: resposta difusa, oriunda de várias fontes.
+% Comparação: o que se fala (em termos de número de tags no StackOverflow) contra o que se usa (de acordo com o ranking do Github). O Resultado foi uma correlação alta.  
+% http://www.dataists.com/wp-content/uploads/2010/12/rank_scatter1.png
+% rank_scatter1.png
+% Autores: Drew Conway e John Myles White
+
+
 
 % Para a segunda: opinião pessoal e com contextos específicos. Não estou dizendo que é o melhor conjunto de linguagens e provavelmente cada programador da audiência não apenas proporia uma lista diferente, mas proporia uma lista baseada em critérios diferentes. A ideia é fornecer uma visão abrangente sobre tópicos importantes tanto para quem já programa quanto para uma pessoa que queira começar a programar. Adicionalmente, não afirmo que essas são linguagens que todo mundo deve saber, mas são todas linguagens que expandem sua percepção sobre o desenvolvimento de sistemas com determinadas características. Conhecê-las, mesmo que você nunca venha a programar profissionalmente em nenhuma delas, certamente lhe tornará um desenvolvedor melhor. 
 
