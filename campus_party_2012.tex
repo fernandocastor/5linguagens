@@ -1071,20 +1071,20 @@ Isso se reflete em sua especificação:{\small
 \Huge{Multi-núcleo $\Rightarrow$ \\concorrência e paralelismo}
 \end{center}
 \end{frame}
-
-\begin{frame}
-\begin{center}
-\includegraphics[scale=0.52]{contador.jpg} 
-\end{center}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\includegraphics[scale=0.52]{contador2.jpg}
-% Neste exemplo, se supusermos que o valor inicial de v é zero, ela pode terminar
-% com qualquer valor entre -1 e 1.  
-\end{center}
-\end{frame}
+%
+%\begin{frame}
+%\begin{center}
+%\includegraphics[scale=0.52]{contador.jpg} 
+%\end{center}
+%\end{frame}
+%
+%\begin{frame}
+%\begin{center}
+%\includegraphics[scale=0.52]{contador2.jpg}
+%% Neste exemplo, se supusermos que o valor inicial de v é zero, ela pode terminar
+%% com qualquer valor entre -1 e 1.  
+%\end{center}
+%\end{frame}
 
 \begin{frame}
 \frametitle{Problemas oriundos de programação multi-núcleo}
@@ -1093,7 +1093,7 @@ Isso se reflete em sua especificação:{\small
 \item Falhas de atomicidade \vspace{0.2cm}
 \item Deadlocks, livelocks, starvation \vspace{0.2cm}
 \item Morte prematura de threads \vspace{0.2cm}
-\item Overhead de criação e uso de threads\vspace{0.5cm}
+\item Custo de criação e chaveamento entre threads\vspace{0.5cm}
 %\begin{block}{}
 %Tornam-se mais graves ainda em um cenário distribuído
 %\end{block}
@@ -1216,7 +1216,7 @@ NaN!\vspace{0.2cm}
 % Como em Java, C, C++, C\#, Lua, Go, Pascal e muitas outras
 % Python não tem, mas Python não tem blocos. JavaScript tem mas eles não definem escopos!
 \item Compilável para JavaScript
-%\item Desenvolvida pelo Google
+\item Desenvolvida pelo Google
 % Uma empresa que teve um papel fundamental na popularização de JavaScript, graças à máquina virtual V8.
 \end{itemize}
 \end{block}
