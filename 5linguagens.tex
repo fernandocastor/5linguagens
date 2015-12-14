@@ -252,22 +252,21 @@ C~~~~~Hello World in Fortran 77\\[0.3cm]
 	% um domínio, tais linguagens geralmente são mais apropriadas para a construção de
 	% determinados tipos de aplicação, com certas características.
 	\begin{columns}
-	\begin{column}[l]{6.5cm}
-	\begin{itemize}
-	\item \textbf{Fortran}: processamento numérico\vspace{0.2cm}
-	\item \textbf{Cobol}: descrição de dados e aplicações comerciais\vspace{0.2cm}
-	\item \textbf{Perl}: processamento de cadeias de caracteres
-	\end{itemize}\vspace{0.2cm}	
-	\end{column}	
-	\begin{column}[r]{4cm}
-	\begin{figure}
-    \includegraphics[scale=0.22]{tools.jpg}\\
-    % Fonte: http://2.bp.blogspot.com/_axtoXDwp4Zk/TTBbP6aSfzI/AAAAAAAAC8k/pEVG62lPG30/s1600/tools.JPG
-    \end{figure}
-    \end{column}t
+  	  \begin{column}{6.5cm}
+	  \begin{itemize}
+	    \item \textbf{Fortran}: processamento numérico\vspace{0.2cm}
+	    \item \textbf{Cobol}: descrição de dados e aplicações comerciais\vspace{0.2cm}
+	    \item \textbf{Perl}: processamento de cadeias de caracteres
+	  \end{itemize}\vspace{0.2cm}	
+	  \end{column}	
+	  \begin{column}{4cm}
+	  \begin{figure}
+        \includegraphics[scale=0.22]{tools.jpg}\\
+      % Fonte: http://2.bp.blogspot.com/_axtoXDwp4Zk/TTBbP6aSfzI/AAAAAAAAC8k/pEVG62lPG30/s1600/tools.JPG
+      \end{figure}
+      \end{column}
 	\end{columns}
     \end{block}
-    
 \end{frame}
 
 \begin{frame}
@@ -288,7 +287,7 @@ Exemplo: \textbf{Java}
 	\includegraphics[scale=0.45]{pls.jpg}\\
 	%http://www.collegeteacher.org/csci101/resource_programming/pics/progLanguages.jpg
 	\end{figure}
-{\small    \byellow{Em 17 de maio de 2013, havia 669 ``LPs'' na lista da Wikipédia.}}
+{\small    \byellow{Em 19 de outubro de 2015, havia 693 ``LPs'' na lista da Wikipédia.}}
 % Não inclui diversas linguagens ``acadêmicas'', por exemplo, Ptolemy (http://ptolemy.cs.iastate.edu/)
 % e Spec# (http://research.microsoft.com/en-us/projects/specsharp/), esta última projetada e 
 % implementada por pesquisadores da Microsoft Research,
@@ -345,28 +344,6 @@ Exemplo: \textbf{Java}
 \item Com diferentes contextos
 \vspace{0.2cm}
 \item Dados são \tred{difíceis de comparar}
-\begin{itemize}
-\vspace{0.2cm}
-\item C\# no~\includegraphics[scale=0.6]{codeplex_logo.jpg}~~vs. C\# no~\includegraphics[scale=0.325]{sourceforge_logo.jpg}
-% A tag C# é usada no Codeplex 2.476 vezes, sendo a mais popular entre todas naquele sítio. 
-% Por outro lado, no SourceForge, há 3.300 projetos que ``usam'' C# mas esta é a apenas a
-% sexta linguagem com mais projetos. Além disso tudo, é importante levar em conta a maturidade
-% dos projetos. No caso do SourceForge, 1031 projetos que usam C# são considerados
-% maduros ou estáveis. No Codeplex 908 projetos que incluem a tag C# são estáveis.  
-%Logo do CodePlex
-%http://joel.neubeck.net/wp-content/uploads/2008/06/codeplex-logo_thumb.jpg
-%Logo do SourceForge
-%http://www.thehostingnews.com/wp-content/uploads/2011/02/Sourceforge-THN.jpg
-\end{itemize}
-
-\begin{columns}
-\begin{column}[c]{2.7cm}
-\includegraphics[scale=0.35]{codeplex.jpg}
-\end{column}
-\begin{column}[c]{2.7cm}
-\includegraphics[scale=0.35]{sourceforge.jpg} 
-\end{column}
-\end{columns}
 \end{itemize}    
 \end{frame}
 
@@ -433,18 +410,14 @@ Exemplo: \textbf{Java}
 \end{frame}
 
 \begin{frame}
-De acordo com a TIOBE, o ranking em maio/2013 era este:
-\hspace*{2cm}\includegraphics[scale=0.32]{tiobe_pop.jpg}
-% Esse ranking faz sentido. Java, C, C++, Objective-C e PHP são, de fato, muito populares. JavaScript, Python, Perl e Visual Basic também.
-% Claro que não é um ranking perfeito, conforme discutido a seguir. 
+De acordo com a TIOBE, o ranking em outubro/2015 era este:
+\hspace*{2cm}\includegraphics[scale=0.32]{tiobe_languages.png}
 \end{frame}
 
 \begin{frame}
-De acordo com a TIOBE, o ranking em maio/2013 era este:
-\hspace*{2cm}\includegraphics[scale=0.32]{tiobe_pop2.jpg}
-% Essas linguagens destacadas em vermelho (PL/SQL, Transact-SQL, LISP) são mais usadas do que Assembly. LISP é mais usada que BASH? Difícil de acreditar nisso. 
-% Perl é mais usada que Ruby e JavaScript? É possível, mas estranho, já que Perl é uma linguagem de nicho (embora 
-% seja uma linguagem de nicho muito popular).  
+De acordo com a TIOBE, o ranking em outubro/2015 era este:
+\hspace*{2cm}\includegraphics[scale=0.32]{tiobe_languages2.png}
+% Perl é mais usada que Ruby e JavaScript e Objective-C? C e Python mais usadas que Javascript? Assembly mais usada que Objective-C?
 \end{frame}
 
 
@@ -469,7 +442,7 @@ De acordo com a TIOBE, o ranking em maio/2013 era este:
 \begin{frame}
 \frametitle{Obtendo informações sobre código}
 \begin{itemize}
-\item Repositórios de software de código aberto (\textit{forges}) são um bom lugar para procurar\vspace{0.1cm}
+\item Repositórios de software de código aberto (\textit{forges})\vspace{0.2cm}
 \begin{itemize}
 \item Os maiores incluem dezenas de milhares de projetos\vspace{0.1cm}
 % Grande parte corresponde a software de alta qualidade, com milhares ou milhões de usuários. 
@@ -489,72 +462,55 @@ Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 \begin{frame}
 \frametitle{Dados do SourceForge}
 \begin{columns}
-\begin{column}[l]{5cm}
-\hspace*{2cm}\includegraphics[scale=0.45]{sourceforge_pop.jpg}
+\begin{column}{5cm}
+\hspace*{2cm}\includegraphics[scale=0.4]{sourceforge_languages.png}
+%http://sourceforge.net/directory/
 \end{column}
-\begin{column}[l]{4cm}
+\begin{column}{4cm}
 {\scriptsize
 {\bf Entre parênteses}: número de projetos que declaram usar a linguagem}
+
+\pause
+\vspace*{0.2cm}
+{\scriptsize
+\tred{Objective-C, Perl e Swift} aparecem no Top 15 da TIOBE mas {\bf não aqui}}
+% As linguagens que aparecem no SourceForge deixam muito claro que essa lista está desatualizada. 
+% O SourceForge caiu muito em popularidade depois do aparecimento do Github.
 \end{column}
 \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{Dados do SourceForge}
-\begin{columns}
-\begin{column}[l]{5cm}
-\hspace*{2cm}\includegraphics[scale=0.45]{sourceforge_pop.jpg}
-\end{column}
-\begin{column}[l]{4cm}
-{\scriptsize
-{\bf Entre parênteses}: número de projetos que declaram usar a linguagem}\\[0.3cm]
-{\scriptsize
-\bred{Objective-C} aparece no Top 10 da TIOBE mas {\bf não aqui}}
-\end{column}
-\end{columns}
-\end{frame}
-
-
-\begin{frame}
 \frametitle{Dados do Github}
-\includegraphics[scale=0.40]{github_pop.jpg}
-\\
-{\scriptsize
-Os {\bf números} correspondem à percentagem do código no Github (em LoC) escrito em cada linguagem.} 
+\includegraphics[scale=0.35]{github_languages.png}
+%https://github.com/blog/2047-language-trends-on-github
+%Dados obtidos via https://github.com/github/linguist. Correspondem ao número de bytes escritos em cada linguagem. 
 \end{frame}
-
-
-\begin{frame}
-\frametitle{Dados do Github}
-\includegraphics[scale=0.40]{github_pop2.jpg}
-\\
-{\scriptsize
-{\bf \tred{Entre parênteses}:} posição no ranking do SourceForge.} 
-% Um ano atrás Ruby nem aparecia no ranking do SourceForge.
-\end{frame}
-
 
 \begin{frame}
 \frametitle{E sobre quais os programadores estão falando?}
 \begin{columns}
-\begin{column}[l]{5cm}
-Tags do {\tt StackOverflow.com} em maio/2013:\vspace{0.2cm}
+\begin{column}{5cm}
+Tags do {\tt StackOverflow.com} em outubro/2015:\vspace{0.2cm}
 {\scriptsize
 \begin{enumerate}
-\item C\# (462080)
-\item Java (419524) % Se incluirmos Android (333260), o número sobe para 752784
-\item PHP (389923)
-\item JavaScript (377794) % Se incluirmos JQuery (313884) e AJAX (62256), o número sobre para 753934, colocando JavaScript na primeira posição!
-\item C++ (201177)
-\item Python (188695) % Incluindo o Django (51697), o número sobe para 240392
-\item Objective-C (134764) % Se Incluirmos ios (146927) e iphone (173252), o número sobre para 454943
-\item SQL (133431) 
-\item C (95882)
-\item Ruby (73002) % Incluindo o Ruby-On-Rails (115491) e Ruby-On-Rails-3 (43404), o número sobre para 162223 (ficando acima de C++ e Python)
-\item VB.NET (46868)
+\item JavaScript (963637) % Se incluirmos JQuery (666617), AJAX (129764), ANGULARJS (127454), node.js (95618), o número sobre para , colocando JavaScript na primeira posição!
+\item Java (944061) % Se incluirmos Android (739044), o número sobe para 
+\item C\# (860626)
+\item PHP (819438)
+\item Python (483959) % Incluindo o Django (105317), o número sobe 
+\item C++ (401005)
+\item CSS (341154)
+\item SQL (298376) 
+\item asp.net (270712)
+\item Objective-C (242939) % Se Incluirmos ios (378293) e iphone (208062), xcode(91199) o número sobre
+\item C (195691)
+\item Ruby (145367) % Incluindo o Ruby-On-Rails (221233), o número sobe 
+\item r (110405)
+\item VB.NET (90188)
 \end{enumerate}}
 \end{column}
-\begin{column}[l]{4cm}
+\begin{column}{4cm}
 {\scriptsize
 {\bf Entre parênteses}: número de posts com aquela tag
 }
@@ -562,11 +518,11 @@ Tags do {\tt StackOverflow.com} em maio/2013:\vspace{0.2cm}
 \pause
 \begin{block}{}
 {\scriptsize
-Se levarmos JQuery, AJAX, Django e Rails em conta:
+Se levarmos JQuery, AJAX, node.js, AngularJS, Django e Rails em conta:
 \begin{enumerate}
-\item[1] JavaScript (\tred{753934})
-\item[5] Ruby (\tred{162223})
-\item[6] Python (\tred{240392})
+\item[1] JavaScript (\tred{1983090}) % Quase 1/5 das perguntas no StackOverflow!!!!!
+\item[6] Python (\tred{589276})
+\item[7] Ruby (\tred{366600})
 \end{enumerate}
 } 
 \end{block}
@@ -574,10 +530,10 @@ Se levarmos JQuery, AJAX, Django e Rails em conta:
 \pause
 \begin{block}{}
 {\scriptsize
-Se incluirmos Android (Java) e iPhone e iOS (Objective-C):
+Se incluirmos Android (Java) e iPhone, iOS e Xcode1 (Objective-C):
 \begin{enumerate}
-\item[2] Java (\tred{752784})
-\item[4] Objective-C (\tred{454943})
+\item[2] Java (\tred{1683105}) % Se somarmos Java e Javascript, é 1/3 das perguntas no SO
+\item[3] Objective-C (\tred{920493})
 \end{enumerate}
 } 
 \end{block}
@@ -587,24 +543,34 @@ Se incluirmos Android (Java) e iPhone e iOS (Objective-C):
 \end{frame}
 
 
+
 \begin{frame}
-\vspace{0.2cm}
-\begin{center}
-\Huge{Complementarmente: Ohloh.net}
-% Sobre o Ohloh.net:
-% Ohloh is a free, public directory of Free and Open Source Software and the contributors who create and maintain it. Ohloh Code is a publicly available, free code search site that indexes most of the projects in Ohloh.
-% End.: http://www.ohloh.net
-\\[0.4cm]
-\Large{http://www.ohloh.net/languages/compare}
-\\[0.4cm]
-Permite comparação em termos de diferentes critérios
-\end{center}
+\frametitle{The RedMonk Programming Language Rankings}
+\includegraphics[scale=0.30]{redmonk_languages.png}
+% cruza dados do StackOverflow com dados do Github (número de projetos)
+%https://redmonk.com/sogrady/category/programming-languages/
+% Dados de junho de 2015
 \end{frame}
+
+
+%\begin{frame}
+%\vspace{0.2cm}
+%\begin{center}
+%\Huge{Complementarmente: Ohloh.net}
+%% Sobre o Ohloh.net:
+%% Ohloh is a free, public directory of Free and Open Source Software and the contributors who create and maintain it. Ohloh Code is a publicly available, free code search site that indexes most of the projects in Ohloh.
+%% End.: http://www.ohloh.net
+%\\[0.4cm]
+%\Large{http://www.ohloh.net/languages/compare}
+%\\[0.4cm]
+%Permite comparação em termos de diferentes critérios
+%\end{center}
+%\end{frame}
 
 \begin{frame}
 	\frametitle{Top 10 a partir de diversas fontes}
 	\begin{figure}
-	\includegraphics[scale=0.4]{lang_pop.jpg}\\
+	\includegraphics[scale=0.5]{lang_pop.png}\\
 	% Pela figura, dá para ver, por exemplo, que muita gente trabalhar com Objective-C, mas muito desse esforço não visa a construção 
 	% de software de código aberto. 
 	\end{figure}
@@ -627,9 +593,7 @@ Permite comparação em termos de diferentes critérios
 \begin{frame}
 \vspace{0.2cm}
 \begin{center}
-\Huge{Exercício mental: pense numa lista com cinco linguagens com resposta à pergunta}\\[0.5cm]
-\pause
-\Large{Que critérios lhe levaram a pensar nessa lista?}
+\Huge{Cinco linguagens de programação para que? Quais os critérios para escolhê-las?}\\[0.5cm]
 \end{center}
 \end{frame}
 
@@ -658,7 +622,7 @@ Não devem servir apenas como prova de conceito para uma ideia
 \begin{block}{Levando em conta certos nichos de aplicação e cenários de uso}
 \begin{enumerate}
 \item Primeira linguagem de programação para aprender
-\item Linguagem Pós-Java
+\item Desenvolvimento Móvel
 \item Programação multi-núcleo e sistemas confiáveis
 \item Desenvolvimento para a Web
 \item Software de baixo nível e de alto desempenho
@@ -705,7 +669,7 @@ Não devem servir apenas como prova de conceito para uma ideia
 \begin{frame}
 \frametitle{Olá, Mundo!}
 \begin{columns}
-\begin{column}[l]{5.5cm}
+\begin{column}{5.5cm}
 {\scriptsize
 \begin{block}{}
 % Java
@@ -728,7 +692,7 @@ int main(void) \{\\
 \end{block}
 }
 \end{column}
-\begin{column}[l]{5.5cm}
+\begin{column}{5.5cm}
 {\scriptsize
 \begin{block}{}
 % LISP
@@ -788,27 +752,31 @@ func main() \{\\
 \begin{frame}
 \vspace{0.2cm}
 \begin{center}
-\Huge{2. Linguagem Pós-Java}
+\Huge{2. Desenvolvimento Móvel}
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Java é Pop} 
+\frametitle{Vendas de Smartphones no mundo} 
 \begin{center}
-\includegraphics[scale=0.33]{java_pop.jpg} 
+\includegraphics[scale=0.37]{smartphones.png}\\
+{\tiny {\bf Fonte}: SmartphoneMarketResearch.com}
+%http://www.smartphonemarketresearch.com/wp-content/uploads/2015/01/idcsmartphonesq42014.png
 \end{center}
-\begin{block}{}
-\begin{itemize}
-\item Mais de 51.000 projetos no SourceForge
-\item Busca por ``Java'' no Github: 49.999 repositórios % Em 17/05/2013
-\item Quase 420.000 tags no StackOverflow.com
-\item Linguagem com mais commits em 2012-2013 (Ohloh.net)
-\end{itemize}
-\end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Mas envelheceu mal!}
+\frametitle{Para Android: Java} 
+\begin{center}
+\includegraphics[scale=0.22]{java_logo.png} 
+\\[0.4cm]
+\pause
+Também é possível usar JavaScript
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mas...}
 \begin{columns}
 \begin{column}[c]{5cm}
 % Java, a linguagem, é como o Marlon Brando. Quando jovem, era bonita e a dona do mundo. Quando envelheceu, 
@@ -825,138 +793,235 @@ func main() \{\\
 \includegraphics[scale=0.35]{mb_old.jpg}
 \end{column}
 \end{columns}
+%% http://www.ibm.com/developerworks/java/library/j-cobol/index.html
+%% Artigo muito bom sobre porque Java NÃO ESTÁ morrendo. Um dos pontos que mais me chamou a atenção no
+%% artigo é justamente o autor falar isso: "The Java programming language. Frankly, this is the part of 
+%% the platform that most shows its age, particularly when compared against more "modern" languages 
+%% like C#, Groovy, (j)Ruby, or Scala."
+\end{frame}
 
+\begin{frame}
+\frametitle{Para iOS: Objective-C} 
+\begin{center}
+\includegraphics[scale=0.35]{obj-c_logo.png} 
+\\[0.4cm]
+\pause
+Também é possível usar JavaScript$^2$
+\end{center}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Males da idade}
-% http://www.ibm.com/developerworks/java/library/j-cobol/index.html
-% Artigo muito bom sobre porque Java NÃO ESTÁ morrendo. Um dos pontos que mais me chamou a atenção no
-% artigo é justamente o autor falar isso: "The Java programming language. Frankly, this is the part of 
-% the platform that most shows its age, particularly when compared against more "modern" languages 
-% like C#, Groovy, (j)Ruby, or Scala."
+\frametitle{Mas...}
 \begin{columns}
 \begin{column}[c]{5cm}
-% Java é como o Marlon Brando. Quando jovem, era bonita e a dona do mundo. Quando envelheceu, apesar de ter
-% continuado popular, em grande parte por causa de glórias do passado, ficou letárgica e inchada. 
-% Parte dos problemas de Java têm mais a ver com a velocidade com que outras linguagens apareceram/evoluíram
-% do que com problemas inerentes à linguagem Java. Têm a ver também com o processo de evolução da
-% linguagem. 
-\includegraphics[scale=1]{old_person.jpg}
-% Fonte: http://2.bp.blogspot.com/_kxEJZQp4yUc/TN4wdGb1bsI/AAAAAAAAB0o/Xv4CNdhcnNE/s1600/Old-Person.jpg
-\\[0.2cm]
-\pause
-\begin{block}{Evolução burocrática}
-\begin{itemize}
-\item \tred{4,5 anos} entre as versões 6 e 7
-\item E as coisas mais legais ficaram para a v8.0.
-% Lambdas, funções de alta ordem e coleções paralelas
-\end{itemize} 
-\end{block}
+\includegraphics[scale=0.35]{sarney.jpg}
 \end{column}
-\pause
-\begin{column}[l]{5cm}
-\begin{block}{Além disso...}
+\hspace{0.8cm}
+\begin{column}[c]{5cm}
 \begin{itemize}
-\item Java ficou mais \tred{complexa}\vspace{0.1cm}\pause
-\\
-Isso se reflete em sua especificação:{\small 
-\\
-~~~~1a ed.: 539 págs. %(na verdade são 852, só que 313 apresentam informações que não são incluídas nas versões subsequentes). 
-\\
-~~~~2a ed.: 544 págs. 
-\\
-~~~~3a ed.: 688 págs. 
-\\
-~~~~4a ed.: \textbf{928 págs}.!}
-\item Mas ainda não oferece funcionalidades requisitadas por muitos!
-% Muitos hoje utilizam linguagens mais simples, como Python e Ruby, para responver problemas que dez ou doze anos atrás eram resolvidos utilizando-se Java.
+\pause
+\item feia
+\pause
+\item velha
+\pause
+\item imortal
+\pause
+\item leva à corrupção
 \end{itemize}
-\end{block}
 \end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}
-\vspace{0.2cm}
-\Large{\bgreen{Prós de Java:}}
-\begin{itemize}
-\item \large{Existe código Java para fazer praticamente qualquer coisa}
-\vspace{0.2cm}
-\item \large{A JVM é uma VM sofisticada}
-\begin{itemize}
-\item E há implementações dela para diversas arquiteturas e SOs
-\end{itemize}
-\end{itemize}
-\vspace{0.5cm}
-\Large{\bred{Contras de Java:}}
-\begin{itemize}
-\item \large{A linguagem}
-\end{itemize}
-
-\end{frame}
-
-
-\begin{frame}
-\vspace{0.2cm}
-\begin{center}
-\Large{Em poucas palavras:}\\[0.2cm]
-\Huge{Abandona-se a \bred{linguagem Java} mas mantém-se a \bgreen{plataforma Java}.}
-\end{center}
-\end{frame}
 
 
 %\begin{frame}
+%\frametitle{Java é Pop} 
 %\begin{center}
-%\includegraphics[scale=0.32]{legend_of_zelda_movie.jpg} 
-%% Fonte: http://www.ign.com/videos/2008/04/01/link-stars-trailer-legend-of-zelda-movie-trailer-debut-hd
-%% Brincadeira de 1o de abril da IGN. Essas brincadeiras frequentemente mexem com coisas que muitas pessoas
-%% queriam que acontecessem mas não aconteceram ainda (e talvez nunca aconteçam). 
+%\includegraphics[scale=0.33]{java_pop.jpg} 
+%\end{center}
+%\begin{block}{}
+%\begin{itemize}
+%\item Mais de 51.000 projetos no SourceForge
+%\item Busca por ``Java'' no Github: 49.999 repositórios % Em 17/05/2013
+%\item Quase 420.000 tags no StackOverflow.com
+%\item Linguagem com mais commits em 2012-2013 (Ohloh.net)
+%\end{itemize}
+%\end{block}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Mas envelheceu mal!}
+%\begin{columns}
+%\begin{column}[c]{5cm}
+%% Java, a linguagem, é como o Marlon Brando. Quando jovem, era bonita e a dona do mundo. Quando envelheceu, 
+%% apesar de ter continuado popular, em grande parte por causa de glórias do passado, ficou letárgica e inchada. 
+%% Já do lado do Marlon Brando, The Godfather, Apocalypse Now e Um Bonde Chamado Desejo continuam sendo clássicos. 
+%% Ele, porém, no fim da vida, já não dava mais muito pano para a manga.
+%% Parte dos problemas de Java têm mais a ver com a velocidade com que outras linguagens apareceram/evoluíram
+%% do que com problemas inerentes à linguagem Java. Essas linguagens incluem diversas características que Java não
+%% tem e que os programadores gostariam que ela tivesse. Têm a ver também com o processo de evolução da
+%% linguagem, guiado pela comunidade. 
+%\includegraphics[scale=0.4]{mb_young.jpg}
+%\end{column}\pause
+%\begin{column}[c]{5cm}
+%\includegraphics[scale=0.35]{mb_old.jpg}
+%\end{column}
+%\end{columns}
+%
+%\end{frame}
+%
+%
+%\begin{frame}
+%\frametitle{Males da idade}
+%% http://www.ibm.com/developerworks/java/library/j-cobol/index.html
+%% Artigo muito bom sobre porque Java NÃO ESTÁ morrendo. Um dos pontos que mais me chamou a atenção no
+%% artigo é justamente o autor falar isso: "The Java programming language. Frankly, this is the part of 
+%% the platform that most shows its age, particularly when compared against more "modern" languages 
+%% like C#, Groovy, (j)Ruby, or Scala."
+%\begin{columns}
+%\begin{column}[c]{5cm}
+%% Java é como o Marlon Brando. Quando jovem, era bonita e a dona do mundo. Quando envelheceu, apesar de ter
+%% continuado popular, em grande parte por causa de glórias do passado, ficou letárgica e inchada. 
+%% Parte dos problemas de Java têm mais a ver com a velocidade com que outras linguagens apareceram/evoluíram
+%% do que com problemas inerentes à linguagem Java. Têm a ver também com o processo de evolução da
+%% linguagem. 
+%\includegraphics[scale=1]{old_person.jpg}
+%% Fonte: http://2.bp.blogspot.com/_kxEJZQp4yUc/TN4wdGb1bsI/AAAAAAAAB0o/Xv4CNdhcnNE/s1600/Old-Person.jpg
+%\\[0.2cm]
+%\pause
+%\begin{block}{Evolução burocrática}
+%\begin{itemize}
+%\item \tred{4,5 anos} entre as versões 6 e 7
+%\item E as coisas mais legais ficaram para a v8.0.
+%% Lambdas, funções de alta ordem e coleções paralelas
+%\end{itemize} 
+%\end{block}
+%\end{column}
+%\pause
+%\begin{column}{5cm}
+%\begin{block}{Além disso...}
+%\begin{itemize}
+%\item Java ficou mais \tred{complexa}\vspace{0.1cm}\pause
+%\\
+%Isso se reflete em sua especificação:{\small 
+%\\
+%~~~~1a ed.: 539 págs. %(na verdade são 852, só que 313 apresentam informações que não são incluídas nas versões subsequentes). 
+%\\
+%~~~~2a ed.: 544 págs. 
+%\\
+%~~~~3a ed.: 688 págs. 
+%\\
+%~~~~4a ed.: \textbf{928 págs}.!}
+%\item Mas ainda não oferece funcionalidades requisitadas por muitos!
+%% Muitos hoje utilizam linguagens mais simples, como Python e Ruby, para responver problemas que dez ou doze anos atrás eram resolvidos utilizando-se Java.
+%\end{itemize}
+%\end{block}
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%\begin{frame}
+%\vspace{0.2cm}
+%\Large{\bgreen{Prós de Java:}}
+%\begin{itemize}
+%\item \large{Existe código Java para fazer praticamente qualquer coisa}
+%\vspace{0.2cm}
+%\item \large{A JVM é uma VM sofisticada}
+%\begin{itemize}
+%\item E há implementações dela para diversas arquiteturas e SOs
+%\end{itemize}
+%\end{itemize}
+%\vspace{0.5cm}
+%\Large{\bred{Contras de Java:}}
+%\begin{itemize}
+%\item \large{A linguagem}
+%\end{itemize}
+%
+%\end{frame}
+%
+%
+%\begin{frame}
+%\vspace{0.2cm}
+%\begin{center}
+%\Large{Em poucas palavras:}\\[0.2cm]
+%\Huge{Abandona-se a \bred{linguagem Java} mas mantém-se a \bgreen{plataforma Java}.}
+%\end{center}
+%\end{frame}
+%
+%
+%%\begin{frame}
+%%\begin{center}
+%%\includegraphics[scale=0.32]{legend_of_zelda_movie.jpg} 
+%%% Fonte: http://www.ign.com/videos/2008/04/01/link-stars-trailer-legend-of-zelda-movie-trailer-debut-hd
+%%% Brincadeira de 1o de abril da IGN. Essas brincadeiras frequentemente mexem com coisas que muitas pessoas
+%%% queriam que acontecessem mas não aconteceram ainda (e talvez nunca aconteçam). 
+%%\end{center}
+%%\end{frame}
+%
+%\begin{frame}
+%\begin{center}
+%\includegraphics[scale=0.35]{java_deprecated.jpg} 
+%% Fonte: http://www.infoq.com/news/2010/04/scala-q
+%% Brincadeira de 1o de abril da InfoQ em 2010
 %\end{center}
 %\end{frame}
 
 \begin{frame}
+\frametitle{Linguagem 2} 
+\includegraphics[scale=0.28]{swift_logo.png}\\[0.4cm]
+%\begin{block}{Porquês}
+%\begin{itemize}
+%\item Compatibilidade retroativa com Java: \textbf{roda na JVM} \vspace{0.1cm}
+%\item Menos verborrágica \vspace{0.1cm}
+%\begin{itemize}
+%\item Inclui \textbf{inferência de tipos}!\vspace{0.1cm}
+%\end{itemize}
+%\item Imperativa, OO, funcional e concorrente.\vspace{0.1cm}
+%\pause
+%\item Principais funcionalidades de Java 8 \textbf{já estão em Scala}
+%% Uma comparação detalhada entre Java e Scala está disponível em http://www.infoq.com/articles/java-8-vs-scala
+%\begin{itemize}
+%\item Desde as primeiras versões!
+%\item E Scala implementa outras que Java nem vislumbra\vspace{0.1cm}
+%% Isso significa que não é necessário inventar gambiarras para integrar essas funcionalidades. 
+%\end{itemize}
+%\item Sony, Twitter, LinkedIn e Siemens, entre outras, já usam!
+%\end{itemize}
+%\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{} 
 \begin{center}
-\includegraphics[scale=0.35]{java_deprecated.jpg} 
-% Fonte: http://www.infoq.com/news/2010/04/scala-q
-% Brincadeira de 1o de abril da InfoQ em 2010
+\textit{The growth that Swift experienced is essentially unprecedented in the history of these rankings.}
+\\[0.8cm]
+{\footnotesize {\tt http://redmonk.com/sogrady/2015/01/14/language-rankings-1-15/}}
 \end{center}
 \end{frame}
 
-\begin{frame}
-\frametitle{Linguagem 2} 
-\includegraphics[scale=0.38]{scala_logo.png}\\[0.4cm]
-\begin{block}{Porquês}
-\begin{itemize}
-\item Compatibilidade retroativa com Java: \textbf{roda na JVM} \vspace{0.1cm}
-\item Menos verborrágica \vspace{0.1cm}
-\begin{itemize}
-\item Inclui \textbf{inferência de tipos}!\vspace{0.1cm}
-\end{itemize}
-\item Imperativa, OO, funcional e concorrente.\vspace{0.1cm}
-\pause
-\item Principais funcionalidades de Java 8 \textbf{já estão em Scala}
-% Uma comparação detalhada entre Java e Scala está disponível em http://www.infoq.com/articles/java-8-vs-scala
-\begin{itemize}
-\item Desde as primeiras versões!
-\item E Scala implementa outras que Java nem vislumbra\vspace{0.1cm}
-% Isso significa que não é necessário inventar gambiarras para integrar essas funcionalidades. 
-\end{itemize}
-\item Sony, Twitter, LinkedIn e Siemens, entre outras, já usam!
-\end{itemize}
-\end{block}
 
+\begin{frame}
+\frametitle{Por que Swift?} 
+Orientada a Objetos + Funcional
+\\[0.4cm]
+Estaticamente tipificada, mas sem inchaço
+\\[0.4cm]
+\textit{Playgrounds} interativos
+\\[0.4cm]
+Código aberto: ecosistema Apple + Linux
 \end{frame}
 
+
 \begin{frame}
-\frametitle{Alternativas} 
+\frametitle{Alternativas (obviamente)} 
 \begin{center}
-% As duas são baseadas na JVM e têm alguns usuários. Diferem fundamentalmente de Scala, porém, porque esta última é 
-% estaticamente tipificada. Além disso, sua base de usuários é maior. Clojure seria uma boa candidata, já que fornece 
-% bom suporte para computação multicore, mas a sintaxe baseada em LISP pode ser um ponto negativo para muitos.  
-\includegraphics[scale=0.27]{clojure_logo} \hspace{0.9cm}
-\includegraphics[scale=0.69]{groovy_logo.png}
+\includegraphics[scale=0.18]{java_logo.png} \hspace{0.8cm}
+\includegraphics[scale=0.22]{obj-c_logo.png} \hspace{0.8cm}\\[0.3cm]
+\pause
+E tem também
+\includegraphics[scale=0.18]{js_logo.png}
 \end{center}
 \end{frame}
 
@@ -1002,6 +1067,7 @@ Isso se reflete em sua especificação:{\small
 \item Deadlocks, livelocks, starvation \vspace{0.2cm}
 \item Morte prematura de threads \vspace{0.2cm}
 \item Custo de criação e chaveamento entre threads\vspace{0.5cm}
+\item Quebra de trabalho entre threads, sincronização\vspace{0.5cm}
 %\begin{block}{}
 %Tornam-se mais graves ainda em um cenário distribuído
 %\end{block}
@@ -1009,7 +1075,7 @@ Isso se reflete em sua especificação:{\small
 \end{frame}
 
 \begin{frame}
-\begin{block}{Três causas fundamentais}
+\begin{block}{Algumas causas fundamentais}
 \begin{itemize}
 \item \tred{\textbf{Estado compartilhado mutável}} é a raiz de quase todos os males.\vspace{0.3cm}
 \item \tred{\textbf{Falta}} de mecanismos para \tred{\textbf{tratamento de erros}} em cenários concorrentes e distribuídos.\vspace{0.3cm}
@@ -1017,7 +1083,6 @@ Isso se reflete em sua especificação:{\small
 \end{itemize}
 \end{block}
 \end{frame}
-
 
 \begin{frame}
 \frametitle{Linguagem 3} \pause
@@ -1061,7 +1126,7 @@ Isso se reflete em sua especificação:{\small
 
 \begin{frame}
 \begin{center}
-\large{{\bf Lado servidor}: ASP, CSP, Server-Side ANSI C, ColdFusion, CGI, Groovy, Grails, Java, Lotus Domino, Perl, PHP, Python (Django), Real Studio Web Edition, Ruby (Rails), Server-Side JavaScript, Mozilla Rhino, Websphere, .NET, (...)}
+\large{{\bf Lado servidor}: ASP, CSP, Server-Side ANSI C, ColdFusion, CGI, Groovy, Grails, Java, Lotus Domino, Perl, PHP, Python (Django), Real Studio Web Edition, Ruby (Rails), Node.js, Server-Side JavaScript, Mozilla Rhino, Websphere, .NET, (...)}
 \\[0.5cm]
 \large{{\bf Lado cliente}: \tred{Ajax}, Flash, \tred{JavaScript}, \tred{jQuery}, Silverlight, \tred{HTML5}}
 % Todos os itens do lado cliente que aparecem em vermelho são baseados em JavaScript.
@@ -1118,7 +1183,7 @@ NaN!\vspace{0.2cm}
 \begin{itemize}
 \item Menos caos
 \begin{itemize}
-\item sem protótipos, objeto global ou atributos adicionados dinamicamente
+\item sem objeto global ou atributos adicionados dinamicamente
 \end{itemize}
 \item Possibilidade de usar \tred{anotações de tipo}
 \item Escopos intuitivos, baseados em blocos
@@ -1138,15 +1203,11 @@ NaN!\vspace{0.2cm}
 %
 %If you like CoffeeScript for its more structured feel than raw JavaScript, you may like Dart's optional type checking.
 \begin{center}
-\includegraphics[scale=0.27]{clojure_logo} \hspace{0.9cm}
-% https://github.com/clojure/clojurescript
-% ClojureScript is a basically a variant of Clojure that can be compiled directly to JavaScript, instead of JVM source code. 
-% A number of features of Clojure are not available in ClojureScript (such as STM). Moreover, the matter of which libraries are
-% available is slightly confusing.
-\includegraphics[scale=0.27]{coffeescript_logo.jpg} \hspace{0.9cm}
+\includegraphics[scale=0.22]{coffeescript_logo.jpg} \hspace{0.9cm}
 \\[0.3cm]
 \includegraphics[scale=0.35]{typescript.jpg} \hspace{0.9cm}
-
+\\[0.3cm]
+\includegraphics[scale=0.60]{hack_logo.png}
 \end{center}
 \end{frame}
 
@@ -1210,11 +1271,11 @@ NaN!\vspace{0.2cm}
 \begin{frame}
 \frametitle{Linguagem 5} \pause
 \begin{columns}
-\begin{column}[l]{3.9cm}
+\begin{column}{3.9cm}
 \includegraphics[scale=0.60]{c_logo.jpg}\\[0.1cm]\pause
 \includegraphics[scale=0.40]{c_logo2.jpg}\\[0.4cm]
 \end{column}
-\begin{column}[l]{6.1cm}
+\begin{column}{6.1cm}
 \pause
 \begin{block}{Porquês}
 \begin{itemize}
