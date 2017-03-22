@@ -5,7 +5,7 @@
 %BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
 %PLEASE REFER TO THE DESCRIPTION OF THE LICENSE (http://creativecommons.org/licenses/by-nc-sa/3.0/) AND TO ITS FULL TEXT (http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode) FOR MORE INFORMATION.
 
-% THIS WORK USES A NUMBER OF IMAGES FROM THIRD-PARTIES. THE COPYRIGHT OF THESE IMAGES REMAIN WITH THEIR OWNERS. 
+% THIS WORK USES A NUMBER OF IMAGES FROM THIRD-PARTIES. THE COPYRIGHTS OF THESE IMAGES REMAIN WITH THEIR OWNERS. 
 
 % This license applies solely to the 5linguagens.tex file. 
 
@@ -44,7 +44,7 @@
 \definecolor{lightestgrey}{rgb}{0.91, 0.91, 0.91}
 \newcommand{\lshd}[1]{\colorbox{lightestgrey}{#1}}
 
-\title{As próximas cinco linguagens para você aprender... e por quê?}
+\title{Cinco linguagens para você aprender... e por quê?}
 \author{Fernando Castor}
 \pgfdeclareimage[height=0.4cm]{cc}{license}
 
@@ -819,20 +819,21 @@ Também é possível usar JavaScript$^2$
 \end{column}
 \hspace{0.8cm}
 \begin{column}[c]{5cm}
+% Enfatizar: ESTAMOS FALANDO DE OBJECTIVE-C
+Objective-C...
 \begin{itemize}
 \pause
-\item feia
+% FEIA
+\item tem uma aparência desagradável
 \pause
-\item velha
+\item tem uma propensão a causar corrupção
 \pause
-\item imortal
-\pause
-\item leva à corrupção
+\item está por aí há tempo demais {\footnotesize (alguns dizem que é \tred{imortal})}
+% É um sintoma de outra época, quando o desenvolvimento de software era muito diferente do que ele é hoje.
 \end{itemize}
 \end{column}
 \end{columns}
 \end{frame}
-
 
 
 %\begin{frame}
@@ -1013,6 +1014,14 @@ Estaticamente tipificada, mas sem inchaço
 Código aberto: ecosistema Apple + Linux
 \end{frame}
 
+\begin{frame}
+\frametitle{Ainda não dá...} 
+para fazer apps Android em Swift.
+\\[0.5cm]
+\pause
+\textbf{AINDA.}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Alternativas (obviamente)} 
@@ -1022,6 +1031,7 @@ Código aberto: ecosistema Apple + Linux
 \pause
 E tem também
 \includegraphics[scale=0.18]{js_logo.png}
+% Há também, no caso de Android, diversas linguagens que rodam na JVM e que podem ser empregadas, como Scala e Kotlin.
 \end{center}
 \end{frame}
 
@@ -1066,7 +1076,7 @@ E tem também
 \item Falhas de atomicidade \vspace{0.2cm}
 \item Deadlocks, livelocks, starvation \vspace{0.2cm}
 \item Morte prematura de threads \vspace{0.2cm}
-\item Custo de criação e chaveamento entre threads\vspace{0.5cm}
+\item Custo de criação e chaveamento entre threads\vspace{0.2cm}
 \item Quebra de trabalho entre threads, sincronização\vspace{0.5cm}
 %\begin{block}{}
 %Tornam-se mais graves ainda em um cenário distribuído
@@ -1077,9 +1087,9 @@ E tem também
 \begin{frame}
 \begin{block}{Algumas causas fundamentais}
 \begin{itemize}
-\item \tred{\textbf{Estado compartilhado mutável}} é a raiz de quase todos os males.\vspace{0.3cm}
-\item \tred{\textbf{Falta}} de mecanismos para \tred{\textbf{tratamento de erros}} em cenários concorrentes e distribuídos.\vspace{0.3cm}
-\item Emprego de \tred{\textbf{threads do sistema operacional}} como unidades de quebra de trabalho.\vspace{0.3cm}
+\item \tred{\textbf{Estado compartilhado mutável}} é a raiz do mal.\vspace{0.3cm}
+\item \tred{\textbf{Falta}} de mecanismos para \tred{\textbf{tratamento de erros}} em cenários concorrentes e distribuídos.\vspace{0.3cm} 
+\item \tred{\textbf{Threads do sistema operacional}} como unidades de quebra de trabalho.\vspace{0.3cm}
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1126,7 +1136,7 @@ E tem também
 
 \begin{frame}
 \begin{center}
-\large{{\bf Lado servidor}: ASP, CSP, Server-Side ANSI C, ColdFusion, CGI, Groovy, Grails, Java, Lotus Domino, Perl, PHP, Python (Django), Real Studio Web Edition, Ruby (Rails), Node.js, Server-Side JavaScript, Mozilla Rhino, Websphere, .NET, (...)}
+\large{{\bf Lado servidor}: ASP, CSP, Server-Side ANSI C, ColdFusion, CGI, Groovy (Grails), Java, Lotus Domino, Perl, PHP, Python (Django), Real Studio Web Edition, Ruby (Rails), Node.js, Server-Side JavaScript, Mozilla Rhino, Websphere, .NET, (...)}
 \\[0.5cm]
 \large{{\bf Lado cliente}: \tred{Ajax}, Flash, \tred{JavaScript}, \tred{jQuery}, Silverlight, \tred{HTML5}}
 % Todos os itens do lado cliente que aparecem em vermelho são baseados em JavaScript.
@@ -1202,6 +1212,8 @@ NaN!\vspace{0.2cm}
 % Both Dart and CoffeeScript are inspired by JavaScript, and both can be translated back to it. They make different choices, particularly in the flavor of their syntax. As a language we think it's fair to say that Dart differs semantically from JavaScript more than CoffeeScript does; that may result in a less line-for-line translation, but we believe Dart-generated JavaScript can have excellent size and speed.
 %
 %If you like CoffeeScript for its more structured feel than raw JavaScript, you may like Dart's optional type checking.
+% Hack não é compilável para JavaScript. Como a ênfase em desempenho neste caso era muito grande, ela é compilável
+% para C++!
 \begin{center}
 \includegraphics[scale=0.22]{coffeescript_logo.jpg} \hspace{0.9cm}
 \\[0.3cm]
@@ -1254,16 +1266,16 @@ NaN!\vspace{0.2cm}
 \end{block}\pause
 \begin{block}{Que linguagem usar se eu quiser...}
 \begin{itemize}
-\item ter acesso direto à memória RAM
+\item acesso direto à RAM
 \begin{itemize}
 \item inclusive para gerenciar memória manualmente
 \end{itemize}
-\item guardar valores de variáveis explicitamente em registradores
+\item guardar valores explicitamente em registradores
 \begin{itemize}
 \item em alguns casos, especificando o registrador
 \end{itemize}
 \item produzir código extremamente eficiente
-\item e fazer isso tudo podendo de forma portável?
+\item e (possivelmente) portável?
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1280,7 +1292,7 @@ NaN!\vspace{0.2cm}
 \begin{block}{Porquês}
 \begin{itemize}
 \item Porque permite \textbf{tudo mencionado no slide anterior}\vspace{0.2cm}
-\item Porque é muito \tred{menos complexa} que C++\vspace{0.2cm}
+\item Porque é \tred{menos complexa} que C++\vspace{0.2cm}
 \item Porque Assembly só é uma opção quando é a \tred{única opção}
 \end{itemize}
 \end{block}
@@ -1303,8 +1315,10 @@ NaN!\vspace{0.2cm}
 % tipos não são checados e diversas operações corriqueiras podem produzir comportamento indefinido, de acordo
 % com a especificação da linguagem. 
 \end{itemize}
-\item ausência de suporte decente a programação paralela
-% pthreads só viraram parte do padrão em 2011!!!
+\item difícil para novatos
+% pelo menos um estudo mostra que o desempenho de novatos usando C é indistinguível do desempenho de
+% novatos usando uma linguagem cujas palavras-chave são geradas aleatoriamente.
+% Estudo publicado em...?
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1317,7 +1331,7 @@ NaN!\vspace{0.2cm}
 \Large{
 \begin{itemize}
 \item É uma linguagem \bgreen{muito usada na prática}\vspace{0.4cm}\pause
-\item Para vários tipos de aplicação é uma \bgreen{excelente ferramenta}\vspace{0.4cm}\pause
+\item Para vários tipos de aplicação, é uma \bgreen{boa ferramenta}\vspace{0.4cm}\pause
 \item As \bred{características negativas} da linguagem fornecem lições importantes
 \end{itemize}
 }
@@ -1333,7 +1347,7 @@ NaN!\vspace{0.2cm}
 \Large{E sempre haverá \textbf{C++}, claro. E Assembly.}
 \end{center}
 \end{frame}
-
+% Em Go o gerencimento de memória é automático, embora tenha ponteiros. 
 \begin{frame}
 \vspace{0.2cm}
 
@@ -1353,63 +1367,6 @@ NaN!\vspace{0.2cm}
 \end{center}
 \end{frame}
 
-
-
-%\begin{frame}
-%\vspace{0.2cm}
-%\begin{center}
-%\Huge{Anexo:}\\[0.3cm]
-%\Huge{Alguns dados extraídos de Ohloh.net}
-%\end{center}
-%\end{frame}
-%
-%%Dados do Ohloh.net sobre atividade de commits obtidos usando a seguinte string de busca:
-%% https://www.ohloh.net/languages/compare?measure=commits&percent=true&l0=objective_c&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&l10=shell&l11=sql&l12=-1&commit=Update
-%
-%%Dados do Ohloh.net sobre número de projetos obtidos usando a seguinte string de busca:
-%% https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=projects&percent=true
-%% A caption é a mesma da primeira figura.
-%
-%%Dados do Ohloh.net sobre número de pessoas que contribuíram pelo menos uma linha de código em cada linguagem obtidos usando a seguinte string de busca:
-%%https://www.ohloh.net/languages/compare?commit=Update&l0=objective_c&l10=shell&l11=sql&l12=-1&l1=c&l2=csharp&l3=cpp&l4=java&l5=javascript&l6=perl&l7=php&l8=python&l9=ruby&measure=contributors&percent=true
-%% A caption é a mesma da primeira figura.
-
-%\begin{frame}
-%\frametitle{Percentagem dos commits em cada linguagem}
-%\begin{columns}
-%\begin{column}[l]{8.5cm}
-%	\includegraphics[scale=0.25]{ohloh.jpg}\\
-%\end{column}
-%\begin{column}[l]{2cm}
-%	\includegraphics[scale=0.20]{ohloh_caption.jpg}\\
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Percentagem dos projetos, por linguagem}
-%\begin{columns}
-%\begin{column}[l]{8.5cm}
-%	\includegraphics[scale=0.20]{ohloh_perproject.jpg}\\
-%\end{column}
-%\begin{column}[l]{2cm}
-%	\includegraphics[scale=0.20]{ohloh_caption.jpg}\\
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Percentagem dos contribuintes, por linguagem}
-%% Considera apenas contribuintes que escreveram ao menos uma linha de código na linguagem
-%\begin{columns}
-%\begin{column}[l]{8.5cm}
-%	\includegraphics[scale=0.25]{ohloh_percontributor.jpg}\\
-%\end{column}
-%\begin{column}[l]{2cm}
-%	\includegraphics[scale=0.20]{ohloh_caption.jpg}\\
-%\end{column}
-%\end{columns}
-%\end{frame}
 
 
 \end{document}

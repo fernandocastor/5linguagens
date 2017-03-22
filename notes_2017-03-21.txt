@@ -1,0 +1,54 @@
+ENERGIA
+*******
+
+Pedir slides ao Gustavo
+
+Adicionar as fotos dos autores
+
+
+
+LINGUAGENS
+**********
+
+OVERALL, precisamos reduzir um pouco o número de slides.
+
+OVERALL, ainda Dart? Em caso negativo, o que seria a alternativa, se
+houver? De acordo com o Redmonk de Q32015, Dart aparecia um pouco acima
+do meio do gráfico, ganhando de linguagens como Rust, em termos de
+popularidade.
+
+5 - "Esse fim pode mudar com o tempo" -> incluir aplicações Android como o
+principal ou um dos principais usos de Java 
+
+6 - Atualizar o slide do Wordmap
+
+18 - Atualizar dados do TIOBE
+
+20 - Ver se os dados do TIOBE são obtidos ainda da mesma forma. 
+
+23-26 - Atualizar os dados dos repositórios e do StackOverflow
+
+29-30 - Ver se ainda devemos manter o Redmonk, afinal, ele apenas agrega
+Github e StackOverflow. Fica redundante. Talvez manter apenas justamente
+por ele juntar essas informações. Tirar apenas da tabela. 
+
+30 - ATUALIZAR A TABELA!!!!
+
+38-43 - Rever toda a parte da primeira linguagem. Pythn é legal, mas tem
+algumas desvantagens também e isso costuma ser ignorado. Talvez ainda
+seja a melhor opção, mas certamente precisa de um pouco mais de
+discussão. Rever as alternativas. Swift e Kotlin? 
+
+61 - Já existe algum app, ainda que experimental, para Android em Swift?
+Em caso afirmativo, colocar uma imagem com a notícia. 
+
+65 - Colocar umas imagens mais atualizadas. Por exemplo, com um celular
+"octa-core". Mentirinha....
+
+88 - Atualizar a imagem de TypeScript e talvez incluir JavaScript entre
+as alternativas. Mencionar que TypeScript e CoffeeScript são compiláveis
+para JavaScript. Já Hack é compilável para  C++. 
+
+100 - Qual foi o paper que falou daquele resultado onde os novatos foram
+tão mal em C quanto na linguagem com palavras-chave geradas
+aleatoriamente?
