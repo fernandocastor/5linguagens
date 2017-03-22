@@ -278,6 +278,10 @@ Exemplo: \textbf{Java}
     \vcenteredhbox{\includegraphics[scale=0.27]{applet.png}}
     \vcenteredhbox{~$\Rightarrow$~} 
     \vcenteredhbox{\includegraphics[scale=0.20]{symantec.jpg}}
+    \\
+    \vcenteredhbox{~$\Downarrow$~} 
+    \\
+    \vcenteredhbox{\includegraphics[scale=0.13]{pixel.png}}
     \end{figure}
 \end{frame}
 
@@ -287,7 +291,7 @@ Exemplo: \textbf{Java}
 	\includegraphics[scale=0.45]{pls.jpg}\\
 	%http://www.collegeteacher.org/csci101/resource_programming/pics/progLanguages.jpg
 	\end{figure}
-{\small    \byellow{Em 19 de outubro de 2015, havia 693 ``LPs'' na lista da Wikipédia.}}
+{\small    \byellow{Em 22 de março de 2017, há 738 ``LPs'' na lista da Wikipédia.}}
 % Não inclui diversas linguagens ``acadêmicas'', por exemplo, Ptolemy (http://ptolemy.cs.iastate.edu/)
 % e Spec# (http://research.microsoft.com/en-us/projects/specsharp/), esta última projetada e 
 % implementada por pesquisadores da Microsoft Research,
@@ -298,6 +302,7 @@ Exemplo: \textbf{Java}
 % já que não são executáveis em um computador de propósito geral. Exemplos incluem Z e B. 
 % A lista encontra-se em http://en.wikipedia.org/wiki/List_of_programming_languages
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Certo, são muitas linguagens, mas...}
@@ -402,7 +407,7 @@ Exemplo: \textbf{Java}
 %We have combined the best-in-class code quality checking tools into one framework. Via a single web interface you can consult all important software defects and metrics information for all your software projects. We provide the facts and figures, you take the decisions.  
 % (extraída de http://www.tiobe.com)
 \begin{quote}
-... is an indicator of the popularity of programming languages. The index is \bgreen{updated once a month}. The ratings are based on the \tblue{number of skilled engineers} world-wide, \tblue{courses} and \tblue{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
+... is an indicator of the popularity of programming languages [...] based on the \tblue{number of skilled engineers} world-wide, \tblue{courses} and \tblue{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia [...] are used to calculate the ratings.  [...] TIOBE index is not about [...] the language in which \tblue{most lines of code have been written}. 
 \end{quote}
 % Ou seja, o índice da TIOBE já adota diferentes perspectivas, o que é uma coisa boa. Apesar disso, apresenta uma limitação importante. 
 % Note que nada do que é dito acima menciona diretamente código escrito nas linguagens ou número de repositórios ou projetos que usam certas linguagens. Ou seja, a avaliação de popularidade é feita muito mais com base em quem conhece a linguagem do que em quem de fato a emprega na construção de programas. 
@@ -410,13 +415,13 @@ Exemplo: \textbf{Java}
 \end{frame}
 
 \begin{frame}
-De acordo com a TIOBE, o ranking em outubro/2015 era este:
-\hspace*{2cm}\includegraphics[scale=0.32]{tiobe_languages.png}
+De acordo com a TIOBE, o ranking em março de 2017 era este:
+\includegraphics[scale=0.29]{tiobe_languages.png}
 \end{frame}
 
 \begin{frame}
-De acordo com a TIOBE, o ranking em outubro/2015 era este:
-\hspace*{2cm}\includegraphics[scale=0.32]{tiobe_languages2.png}
+De acordo com a TIOBE, o ranking em março de 2017 era este:
+\includegraphics[scale=0.29]{tiobe_languages2.png}
 % Perl é mais usada que Ruby e JavaScript e Objective-C? C e Python mais usadas que Javascript? Assembly mais usada que Objective-C?
 \end{frame}
 
@@ -426,9 +431,9 @@ De acordo com a TIOBE, o ranking em outubro/2015 era este:
 \begin{center}
 \Large{Relembrando:}\\[0.1cm]
 {\small \begin{quote}
-... is an indicator of the popularity of programming languages. The index is updated once a month. The ratings are based on the \bred{number of skilled engineers} world-wide, \bred{courses} and \bred{third party vendors}. The \tblue{popular search engines} Google, Bing, Yahoo!, Wikipedia, Amazon, YouTube and Baidu are used to calculate the ratings. 
-% Para aqueles que não se lembram das informações que o ranking da TIOBE captura...
+... is an indicator of the popularity of programming languages [...] based on the \bred{number of skilled engineers} world-wide, \bred{courses} and \bred{third party vendors}. The \bred{popular search engines} Google, Bing, Yahoo!, Wikipedia [...] are used to calculate the ratings.  [...] TIOBE index is \tred{not} about [...] the language in which \tred{most lines of code have been written}. 
 \end{quote}
+
 }
 \end{center}
 \pause
@@ -460,7 +465,7 @@ Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 \end{frame}
 
 \begin{frame}
-\frametitle{Dados do SourceForge}
+\frametitle{Dados do SourceForge (de 10/2015)}
 \begin{columns}
 \begin{column}{5cm}
 \hspace*{2cm}\includegraphics[scale=0.4]{sourceforge_languages.png}
@@ -473,7 +478,7 @@ Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 \pause
 \vspace*{0.2cm}
 {\scriptsize
-\tred{Objective-C, Perl e Swift} aparecem no Top 15 da TIOBE mas {\bf não aqui}}
+\tred{R, Perl e Swift} aparecem no Top 15 da TIOBE mas {\bf não aqui}}
 % As linguagens que aparecem no SourceForge deixam muito claro que essa lista está desatualizada. 
 % O SourceForge caiu muito em popularidade depois do aparecimento do Github.
 \end{column}
@@ -481,7 +486,7 @@ Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 \end{frame}
 
 \begin{frame}
-\frametitle{Dados do Github}
+\frametitle{Dados do Github (10/2015)}
 \includegraphics[scale=0.35]{github_languages.png}
 %https://github.com/blog/2047-language-trends-on-github
 %Dados obtidos via https://github.com/github/linguist. Correspondem ao número de bytes escritos em cada linguagem. 
@@ -491,23 +496,23 @@ Examinaremos os dados de dois desses repositórios:\\[0.2cm]
 \frametitle{E sobre quais os programadores estão falando?}
 \begin{columns}
 \begin{column}{5cm}
-Tags do {\tt StackOverflow.com} em outubro/2015:\vspace{0.2cm}
+Tags do {\tt StackOverflow.com} em março/2017:\vspace{0.2cm}
 {\scriptsize
 \begin{enumerate}
-\item JavaScript (963637) % Se incluirmos JQuery (666617), AJAX (129764), ANGULARJS (127454), node.js (95618), o número sobre para , colocando JavaScript na primeira posição!
-\item Java (944061) % Se incluirmos Android (739044), o número sobe para 
-\item C\# (860626)
-\item PHP (819438)
-\item Python (483959) % Incluindo o Django (105317), o número sobe 
-\item C++ (401005)
-\item CSS (341154)
-\item SQL (298376) 
-\item asp.net (270712)
-\item Objective-C (242939) % Se Incluirmos ios (378293) e iphone (208062), xcode(91199) o número sobre
-\item C (195691)
-\item Ruby (145367) % Incluindo o Ruby-On-Rails (221233), o número sobe 
-\item r (110405)
-\item VB.NET (90188)
+\item JavaScript (1347902)
+\item Java (1229513)  
+\item C\# (1073182)
+\item PHP (1052878)
+\item Python (720882)  
+\item C++ (503932)
+\item CSS (457529)
+\item SQL (377801) 
+\item asp.net (312036)
+\item Objective-C (274621) 
+\item Ruby (270146)  % Número que refere-se a Ruby-on-rails.  
+\item C (245446)
+\item R (175524)
+\item Swift (140342)
 \end{enumerate}}
 \end{column}
 \begin{column}{4cm}
@@ -516,40 +521,30 @@ Tags do {\tt StackOverflow.com} em outubro/2015:\vspace{0.2cm}
 }
 \\[0.3cm]
 \pause
-\begin{block}{}
+\begin{block}{Isso não é tudo!}
 {\scriptsize
-Se levarmos JQuery, AJAX, node.js, AngularJS, Django e Rails em conta:
-\begin{enumerate}
-\item[1] JavaScript (\tred{1983090}) % Quase 1/5 das perguntas no StackOverflow!!!!!
-\item[6] Python (\tred{589276})
-\item[7] Ruby (\tred{366600})
-\end{enumerate}
-} 
+% Por que não pegar os números de postagens relativos às tags abaixo e simplesmente somá-los aos
+% números das linguagens correspondentes? Porque há uma sobreposição de tags: a maioria das postagens
+% sobre JQuery também têm JavaScript como tag. Os números não seriam fidedignos. A única exceção
+% que levamos em conta foi Ruby-On-Rails porque há mais postagens com essa tag do que com a tag Ruby.
+JQuery, AJAX, Node.js, AngularJS $\Rightarrow$ \textbf{JavaScript} \\[0.3cm]
+Django $\Rightarrow$ \textbf{Python} \\[0.3cm]
+Rails $\Rightarrow$ \textbf{Ruby} \\[0.3cm]
+Android $\Rightarrow$ \textbf{Java} \\[0.3cm]
+iPhone, iOS, Xcode1 $\Rightarrow$ \textbf{Objective-C} e \textbf{Swift}.
+}% Isso poderia ser feito com outras tecnologias, como .NET. O problema é que .NET tem a ver com várias linguagens. 
 \end{block}
-\vspace{0.3cm}
-\pause
-\begin{block}{}
-{\scriptsize
-Se incluirmos Android (Java) e iPhone, iOS e Xcode1 (Objective-C):
-\begin{enumerate}
-\item[2] Java (\tred{1683105}) % Se somarmos Java e Javascript, é 1/3 das perguntas no SO
-\item[3] Objective-C (\tred{920493})
-\end{enumerate}
-} 
-\end{block}
-% Isso poderia ser feito com outras tecnologias, como .NET. O problema é que .NET tem a ver com várias linguagens. 
 \end{column}
 \end{columns}
 \end{frame}
 
 
-
 \begin{frame}
-\frametitle{The RedMonk Programming Language Rankings}
-\includegraphics[scale=0.30]{redmonk_languages.png}
+\frametitle{The RedMonk Programming Language Rankings (01/2017)}
+\includegraphics[scale=0.23]{redmonk_languages.png}
 % cruza dados do StackOverflow com dados do Github (número de projetos)
 %https://redmonk.com/sogrady/category/programming-languages/
-% Dados de junho de 2015
+% Dados de janeiro de 2017
 \end{frame}
 
 
@@ -570,7 +565,7 @@ Se incluirmos Android (Java) e iPhone, iOS e Xcode1 (Objective-C):
 \begin{frame}
 	\frametitle{Top 10 a partir de diversas fontes}
 	\begin{figure}
-	\includegraphics[scale=0.5]{lang_pop.png}\\
+	\includegraphics[scale=0.26]{lang_pop.png}\\
 	% Pela figura, dá para ver, por exemplo, que muita gente trabalhar com Objective-C, mas muito desse esforço não visa a construção 
 	% de software de código aberto. 
 	\end{figure}
@@ -759,7 +754,7 @@ func main() \{\\
 \begin{frame}
 \frametitle{Vendas de Smartphones no mundo} 
 \begin{center}
-\includegraphics[scale=0.37]{smartphones.png}\\
+\includegraphics[scale=0.43]{smartphones.png}\\
 {\tiny {\bf Fonte}: SmartphoneMarketResearch.com}
 %http://www.smartphonemarketresearch.com/wp-content/uploads/2015/01/idcsmartphonesq42014.png
 \end{center}
@@ -1002,6 +997,15 @@ Objective-C...
 \end{center}
 \end{frame}
 
+\begin{frame}
+\frametitle{} 
+\begin{center}
+\includegraphics[scale=0.40]{swift_top10.png}
+% PARTE 1: https://medium.com/@ephemer/why-we-put-an-app-in-the-android-play-store-using-swift-96ac87c88dfc#.mmpuru21n
+% PARTE 2: https://medium.com/@ephemer/how-we-put-an-app-in-the-android-play-store-using-swift-67bd99573e3c#.wuv80fe9u
+\end{center}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Por que Swift?} 
@@ -1017,9 +1021,15 @@ Código aberto: ecosistema Apple + Linux
 \begin{frame}
 \frametitle{Ainda não dá...} 
 para fazer apps Android em Swift.
-\\[0.5cm]
-\pause
-\textbf{AINDA.}
+\end{frame}
+
+\begin{frame}
+\frametitle{OU DÁ?} 
+\begin{center}
+\includegraphics[scale=0.27]{swift_android.png}
+% PARTE 1: https://medium.com/@ephemer/why-we-put-an-app-in-the-android-play-store-using-swift-96ac87c88dfc#.mmpuru21n
+% PARTE 2: https://medium.com/@ephemer/how-we-put-an-app-in-the-android-play-store-using-swift-67bd99573e3c#.wuv80fe9u
+\end{center}
 \end{frame}
 
 
@@ -1177,6 +1187,8 @@ NaN!\vspace{0.2cm}
 %\item Escopos globais e baseados em funções \vspace{0.2cm}
 %\item Blocos \tred{não} definem escopos locais \vspace{0.2cm} % há implementações de JavaScript que permitem isso.
 %\item \textit{Closures} dependem de escopo léxico \vspace{0.2cm}
+\item Melhorou com a introdução de \tred{\texttt{let}}.
+\vspace{0.3cm}
 \item Cuidado com o significado de \tred{\texttt{this}}!
 \end{itemize}
 %\pause
@@ -1186,22 +1198,21 @@ NaN!\vspace{0.2cm}
 \end{frame}
 
 \begin{frame}
-\frametitle{Linguagem 4} \pause
-\includegraphics[scale=0.40]{dart_logo.jpg}\\[0.4cm]
+\frametitle{Linguagens 4} \pause
+\includegraphics[scale=0.40]{dart_logo.jpg}\hspace{0.3cm}e\hspace{0.3cm}\includegraphics[scale=0.31]{typescript.png} \hspace{0.9cm}
+\\[0.4cm]
 \pause
 \begin{block}{Porquês}
 \begin{itemize}
 \item Menos caos
 \begin{itemize}
-\item sem objeto global ou atributos adicionados dinamicamente
-\end{itemize}
 \item Possibilidade de usar \tred{anotações de tipo}
-\item Escopos intuitivos, baseados em blocos
-% Como em Java, C, C++, C\#, Lua, Go, Pascal e muitas outras
-% Python não tem, mas Python não tem blocos. JavaScript tem mas eles não definem escopos!
-\item Compilável para JavaScript
-\item Desenvolvida pelo Google
+\item Compiláveis para JavaScript
+\item Ambas de código aberto 
 % Uma empresa que teve um papel fundamental na popularização de JavaScript, graças à máquina virtual V8.
+\item atributos adicionados dinamicamente mais controlados
+% Em Dart são proibidos. Além disso, em Dart não há objeto global.
+\end{itemize}
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1216,8 +1227,6 @@ NaN!\vspace{0.2cm}
 % para C++!
 \begin{center}
 \includegraphics[scale=0.22]{coffeescript_logo.jpg} \hspace{0.9cm}
-\\[0.3cm]
-\includegraphics[scale=0.35]{typescript.jpg} \hspace{0.9cm}
 \\[0.3cm]
 \includegraphics[scale=0.60]{hack_logo.png}
 \end{center}
@@ -1315,10 +1324,10 @@ NaN!\vspace{0.2cm}
 % tipos não são checados e diversas operações corriqueiras podem produzir comportamento indefinido, de acordo
 % com a especificação da linguagem. 
 \end{itemize}
-\item difícil para novatos
+\item Difícil para novatos
 % pelo menos um estudo mostra que o desempenho de novatos usando C é indistinguível do desempenho de
 % novatos usando uma linguagem cujas palavras-chave são geradas aleatoriamente.
-% Estudo publicado em...?
+% Andreas Stefik, Susanna Siebert. An Empirical Investigation into Programming Language Syntax. ACM Transactions on Computing Education, vol 13(4), 2013.
 \end{itemize}
 \end{block}
 \end{frame}
@@ -1352,12 +1361,27 @@ NaN!\vspace{0.2cm}
 \vspace{0.2cm}
 
 \begin{center}
+\begin{columns}
+\begin{column}{3.9cm}
 \includegraphics[scale=0.14]{flame_war.jpg} \\[0.2cm]
+\end{column}
+\begin{column}{6.1cm}
 \pause
-\Large{Obrigado!}
+\begin{block}{Linguagens}
+\begin{enumerate}
+\item Python
+\item Swift
+\item Erlang
+\item Dart e TypeScript
+\item C
+\end{enumerate}
+\end{block}
+\end{column}
+\end{columns}
+\pause
 \begin{block}{}
 \begin{center}
-{\small \textbf{Contato}: castor arroba cin.ufpe.br\\[0.1cm]
+{\small \textbf{Contato}: castor no domínio cin.ufpe.br\\[0.1cm]
 \textbf{Slides}: http://github.com/fernandocastor\\[0.1cm]
 \textbf{Vídeo}: http://www.youtube.com/watch?v=MsWmSCCVj5Y\\[0.1cm]
 ({\footnotesize Busca no YouTube ou Google: \textbf{cpre1 linguagens}})\\
@@ -1366,7 +1390,5 @@ NaN!\vspace{0.2cm}
 \end{block}
 \end{center}
 \end{frame}
-
-
 
 \end{document}
