@@ -7,11 +7,19 @@ Adicionar as fotos dos autores
 
 
 
-LINGUAGENS
-**********
 
 
-65 - Colocar umas imagens mais atualizadas. Por exemplo, com um celular
-"octa-core". Mentirinha....
 
 
+
+Adicionar effect size às tabelas dos vencedores
+
+Brilho dos displays
+
+O Cordova tem enviesamento para JavaScript?
+
+Zenphone Selfie Android 6 escala diferente no gráfico
+
+Todos os gráficos com a mesma escala
+
+Norma ISO25000
